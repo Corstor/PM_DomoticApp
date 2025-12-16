@@ -10,7 +10,7 @@ Gli admin possono aggiungere dispositivi al server (se presenti), creare gruppi 
 
 Oltre a questo, il pilastro portante del progetto è che il server in questione è in grado di riconoscere i dispositivi e di renderizzare automaticamente la grafica per il loro utilizzo (per esempio spegnere/accendere una luce) in base ad un protocollo che i dispositivi stessi devono implementare. Questo rende l'applicazione molto flessibile, dato che è in grado di gestire qualsiasi tipo di dispositivo a patto che utilizzi tale protocollo.
 
-L'idea per l'elaborato di Project Management è quella di avere un'azienda software con già qualche anno alle spalle e che magari ha diretto accesso a dei dispositivi IoT che potrebbero programmare (o magari hanno già un loro protocollo che possono riutilizzare).
+L'idea per l'elaborato di Project Management è quella di avere un'azienda software con già qualche anno alle spalle e che magari ha diretto accesso a dei dispositivi IoT che potrebbero programmare.
 
 L'azienda che in questa simulazione si occuperà del progetto DomoticApp è la SDA Corporation (Smart Domotic Apps), che ha già creato dei dispositivi IoT in passato con relativa applicazione per gestirli, e vorrebbe riuscire ad estrarre un protocollo comune a tutti i dispositivi in modo da non doverli cambiare eccessivamente.
 
