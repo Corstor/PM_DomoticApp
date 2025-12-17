@@ -52,7 +52,7 @@
       <td> Molteplici applicativi diversi per la gestione di molteplici dispositivi diversi e completa assenza di cooperazione/competizione tra i vari dispositivi </td>
     </tr>
     <tr>
-      <th>Scopo</th>
+      <th>Scope</th>
       <td> Creare un applicativo che riesca a gestire l'insieme di dispositivi eterogenei in modo facile ed intuibile, portando anche cooperazione e/o competizione tra di loro </td>
     </tr>
     <tr>
@@ -83,18 +83,45 @@
       <th>Assunzioni</th>
       <td>
         <ul>
-          <li> Gli utenti admin del sistema sono mediamente esperti di tecnologia. </li>
-          <li>  </li>
+          <li> Gli utenti admin del sistema sono mediamente esperti di tecnologia: sanno usare uno smartphone e navigare su internet. </li>
         </ul>
       </td>
     </tr>
-    <tr>
-      <th>Rischi</th>
-      <td></td>
-    </tr>
-    <tr>
       <th>Ostacoli</th>
-      <td></td>
+      <td>
+        <ul> 
+          <li> Gli utenti potrebbero volere funzionalità avanzate o specifiche per certi dispositivi che vanno oltre lo scopo del progetto. </li>
+        </ul>
+      </td>
     </tr>
   </tbody>
 </table>
+
+### Analisi dei Rischi
+
+#### Rischi tecnici
+
+| ID   | Rischio                                              | Triangolo dello scope | Impatto | Probabilità | Mitigazione          |
+| ---- | ---------------------------------------------------- | --------------------- | ------- | ----------- | -------------------- |
+| #001 | Basse performance                                    | Qualità               | Alto    | Bassa       | Mitigare             |
+| #002 | Tempo per creare il protocollo troppo lungo          | Tempo                 | Alto    | Media       | Piano di contingenza |
+| #003 | Difficoltà nell'integrazione dei vari sottosistemi   | Scope                 | Alto    | Bassa       | Mitigare             |
+| #004 | Difficoltà nel creare un linguaggio di script adatto | Scope                 | Alto    | Media       | Piano di contingenza |
+| #005 | Gestione dei permessi utenti complessa               | Scope                 | Basso   | Bassa       | Accettare            |
+| #006 | Uso di librerie su cui non si è formati              | Scope                 | Medio   | Bassa       | Mitigare             |
+| #007 | UX e UI non efficaci                                 | Qualità               | Alto    | Media       | Piano di contingenza |
+| #008 | Sistema non modulare                                 | Scope                 | Medio   | Alta        | Evitare              |
+
+#### Rischi di gestione progetto
+
+| ID   | Rischio                                    | Triangolo dello scope | Impatto | Probabilità | Mitigazione |
+| ---- | ------------------------------------------ | --------------------- | ------- | ----------- | ----------- |
+| #009 | Scarsa cura nell'allocazione delle risorse | Risorse               | Alto    | Media       | Evitare     |
+
+#### Rischi di organizzazione
+
+| ID   | Rischio                                                 | Triangolo dello scope | Impatto | Probabilità | Mitigazione |
+| ---- | ------------------------------------------------------- | --------------------- | ------- | ----------- | ----------- |
+| #010 | Non disponibilità di dispositivi da testare             | Risorse               | Alto    | Bassa       | Evitare     |
+| #011 | Budget non sufficiente                                  | Costo                 | Alto    | Media       | Evitare     |
+| #012 | Errata assegnazione delle priorità ai vari sottosistemi | Risorse               | Alto    | Media       | Evitare     |
