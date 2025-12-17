@@ -33,7 +33,7 @@
 | Condizione                                 | Obiettivo                                                                                                                       |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
 | Protocollo univoco per tutti i dispositivi | Tutti i dispositivi devono poter essere registrati sull'applicativo, senza perdere le proprie funzionalità                      |
-| Restare nel budget                         | €5 M                                                                                                                            |
+| Restare nel budget                         | €2 M                                                                                                                            |
 | Feedback dagli utenti                      | Positivi o suggerimenti per nuove aggiunte                                                                                      |
 | UX e UI                                    | Interfaccia grafica accessibile per chiunque, semplice ed intuitiva                                                             |
 | Modularità                                 | Il sistema deve poter essere espandibile facilmente per possibili aggiunte di nuove funzionalità                                |
@@ -125,3 +125,9 @@
 | #010 | Non disponibilità di dispositivi da testare             | Risorse               | Alto    | Bassa       | Evitare     |
 | #011 | Budget non sufficiente                                  | Costo                 | Alto    | Media       | Evitare     |
 | #012 | Errata assegnazione delle priorità ai vari sottosistemi | Risorse               | Alto    | Media       | Evitare     |
+
+## Requirements Breakdown Structure (RBS)
+
+## User Stories
+
+## Modello PMLC

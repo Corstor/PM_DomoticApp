@@ -26,3 +26,19 @@ Le task sono eseguibili manualmente da un utente che ne ha il permesso, mentre l
 **_Notifications management susbystem_**: Questo sottosistema si occupa della gestione delle notifiche, che possono essere inviate dagli script oppure da un dispositivo che va offline. Per evitare troppe notifiche, gli utenti possono decidere di quali dispositivi essere aggiornati dello stato online/offline.
 
 **_Presentation subsystem_**: Questo sottosistema si occupa della resa grafica del sistema per aiutare gli utenti nella gestione della propria casa domotica. In quanto non si cerca di creare un sito web quanto più bello possibile ma uno molto funzionale ed intuitivo, non è necessario spendere troppo tempo nella UI quanto nella UX. A tale scopo si può rimanere molto legati a qualche design system completo già presente per accelerare il lavoro.
+
+## Project Scoping Meeting
+
+Partecipanti: Project Manager, Responsabile Reparto Elettronica, Responsabile Reparto IT, Sviluppatori, CEO, Facilitator.
+
+Durante il primo **Project Scoping Meeting**, dalla durata di circa 2 ore, i partecipanti hanno comunicato e condiviso la necessità per l'azienda di dover fornire ai propri utenti un sistema software che permetta l'utilizzo di molteplici dispositivi in maniera rapida ed efficace, senza dover pensare troppo ad un interfaccia grafica ad-hoc per dispositivo, in quanto forniscono già quelle applicazioni.
+
+Questo è stato possibile poichè è stata condotta un'analisi dell'attuale utilizzo degli utenti dei propri dispositivi IoT (**AS IS**) (tale analisi è stata possibile grazie alle recensioni lasciate dagli utenti), discutendo quindi di come poter risolvere il problema attraverso un sistema software (**TO BE**), definendone le principali caratteristiche, come il linguaggio a blocchi per gli script, un protocollo comune tra tutti i dispositivi e la gestione dei permessi degli utenti da parte di un admin.
+
+Il **linguaggio a blocchi** è stato pensato per poter dare agli utenti la possibilità di far eseguire azioni pre-programmate o automatiche a certi dispositivi in base all'ambiente che li circonda (per esempio chiudere la finestra se fa freddo, utilizzando un sensore per la temperatura e un attuatore per la finestra che prima non potevano comunicare).
+Il **protocollo** è il pilastro portante del progetto in quanto è necessario per poter gestire molteplici dispositivi eterogenei con la stessa applicazione senza dover fare grafiche diverse per ogni dispositivo.
+La **gestione dei permessi** è saltata fuori nel momento in cui un bambino dovesse creare script "pericolosi" senza il permesso dei genitori, è richiesto dunque una adeguata gestione in tal senso.
+
+Inoltre la discussione ha fatto luce su certe **Conditions Of Satisfactions (COS)** che guideranno il monitoring del progetto ed un'analisi degli **stakeholder** per comprendere appieno il target del progetto.
+
+Infine, sono stati decisi i prossimi passi, incluso un secondo incontro per la **gestione dei rischi** e un'analisi dettagliata dei **requisiti**. Nonostante inizialmente erano presenti degli sviluppatori un po' scettici riguardo il protocollo comune tra i dispositivi, la comunicazione tra le varie parti e qualche idea abbozzata ha calmato gli spiriti e tutti sperano nella riuscita del progetto.
