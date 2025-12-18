@@ -52,7 +52,7 @@
       <td> Molteplici applicativi diversi per la gestione di molteplici dispositivi diversi e completa assenza di cooperazione/competizione tra i vari dispositivi </td>
     </tr>
     <tr>
-      <th>Scope</th>
+      <th>Goal</th>
       <td> Creare un applicativo che riesca a gestire l'insieme di dispositivi eterogenei in modo facile ed intuibile, portando anche cooperazione e/o competizione tra di loro </td>
     </tr>
     <tr>
@@ -73,7 +73,7 @@
         <ul> 
           <li> Tutti i dispositivi aziendali devono poter essere utilizzati attraverso l'applicativo e senza perdita di funzionalità. </li> 
           <li> Gli utenti imparano ad utilizzare l'applicativo in circa 3/4 giorni, massimo 7. </li>
-          <li> Almeno il 70% degli utenti che possiedono 4 o più dispositivi di tipologia diversa utilizzano l'applicativo insieme ai vecchi applicativi. </li>
+          <li> Almeno il 70% degli utenti che possiedono 4 o più dispositivi IoT utilizzano l'applicativo insieme ai vecchi applicativi. </li>
           <li> Soddisfazione pari o superiore all'80% nelle recensioni. </li>
           <li> Aumento del guadagno annuale di almeno 15% entro 2 anni dalla fine del progetto. </li>
         </ul>

@@ -42,3 +42,32 @@ La **gestione dei permessi** è saltata fuori nel momento in cui un bambino dove
 Inoltre la discussione ha fatto luce su certe **Conditions Of Satisfactions (COS)** che guideranno il monitoring del progetto ed un'analisi degli **stakeholder** per comprendere appieno il target del progetto.
 
 Infine, sono stati decisi i prossimi passi, incluso un secondo incontro per la **gestione dei rischi** e un'analisi dettagliata dei **requisiti**. Nonostante inizialmente erano presenti degli sviluppatori un po' scettici riguardo il protocollo comune tra i dispositivi, la comunicazione tra le varie parti e qualche idea abbozzata ha calmato gli spiriti e tutti sperano nella riuscita del progetto.
+
+## Stakeholders Analysis
+
+L'analisi degli stakeholders effettuata nel project scoping meeting è stato piuttosto veloce, dato che molti stakeholders dei vecchi progetti sono gli stessi di questo progetto, anche se con qualche eccezione.
+
+### Utenti
+
+Gli utenti rappresentano il target principale del progetto, e possono essere suddivisi a loro volta in due categorie principali: utenti con **almeno 4 dispositivi IoT** e utenti con **meno di 4 dispositivi IoT**.
+
+I primi sono il vero target del progetto, in quanto l'applicativo serve proprio per aiutare nella gestione di tanti dispositivi IoT attraverso l'utilizzo di una singola app.
+
+I secondi, per quanto non siano il target principale, sono comunque considerati per più motivi: 
+- potrebbero decidere di comprare altri dispositivi IoT dall'azienda se ne vedono un particolare guadagno con l'utilizzo dell'applicativo;
+- potrebbero decidere comunque di usare l'applicativo perchè comodo (per esempio potrebbero avere solamente un sensore della luce e una o due lampadine IoT, permettendo di automatizzare accensione/spegnimento delle luci in base alla luce percepita dal sensore);
+- E' importante controllare e far sì che questi utenti non preferiscano il nuovo applicativo al vecchio in tutte le situazioni, perchè questo progetto non si pone l'obbiettivo di togliere le vecchie applicazioni specifiche per dispositivo. 
+
+Ovviamente per l'azienda rendere "inutili" i vecchi applicativi vorrebbe dire non doverle più aggiornare e produrre ma piuttosto tenere aggiornato solo quello nuovo, però questa decisione avrebbe bisogno di un appoggio concreto fornito da tanti feedback da parte degli utenti, in modo da capire se il nuovo applicativo è davvero in grado di sostituire tutti i vecchi, per cui si pensa che si possa mettere da parte questa soluzione per il momento.
+
+### Sviluppatori
+
+Gli sviluppatori sono un altro importante stakeholder. Infatti questo progetto andrà ad impattare per sempre il loro modo di lavorare, dato che per ogni nuovo dispositivo dovranno poi andare a fornirne il protocollo deciso in questo progetto. Un altro motivo è che se dovesse essere creato un dispositivo che non è gestibile attraverso questo applicativo, sarà comunque compito loro dover aggiornare il protocollo per renderlo funzionante anche nel nuovo caso.
+
+### SDA Corporation
+
+Supporta il progetto per i benefici strategici che ne possono ricavare, come il miglioramento della soddisfazione dei clienti e il rafforzamento della loro reputazione nel complesso mondo dell'IoT.
+
+### Investitori e finanziatori
+
+Supporta il progetto per i benefici economici che ne possono ricavare, puntando ad un guadagno misurabile ottenuto principalmente dalla maggiore soddisfazione dei clienti.
