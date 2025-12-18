@@ -31,7 +31,19 @@ Le task sono eseguibili manualmente da un utente che ne ha il permesso, mentre l
 
 Partecipanti: Project Manager, Responsabile Reparto Elettronica, Responsabile Reparto IT, Sviluppatori, CEO, Facilitator.
 
-Durante il primo **Project Scoping Meeting**, dalla durata di circa 2 ore, i partecipanti hanno comunicato e condiviso la necessità per l'azienda di dover fornire ai propri utenti un sistema software che permetta l'utilizzo di molteplici dispositivi in maniera rapida ed efficace, senza dover pensare troppo ad un interfaccia grafica ad-hoc per dispositivo, in quanto forniscono già quelle applicazioni.
+Ordine del giorno:
+
+| Orario        | Durata | Argomento                                                                   |
+| ------------- | ------ | --------------------------------------------------------------------------- |
+| 09:30 - 09:45 | 15 min | Introduzione al progetto e obiettivi del meeting                            |
+| 09:45 - 10:15 | 30 min | Stato Attuale (AS IS)                                                       |
+| 10:15 - 11:00 | 45 min | Stato Desiderato (TO BE), identificazione priorità e criticità del progetto |
+| 11:00 - 11:20 | 20 min | Condictions Of Satisfaction (COS)                                           |
+| 11:20 - 11:30 | 10 min | Analisi degli stakeholders                                                  |
+| 11:30 - 11:40 | 10 min | Pianificazione degli incontri successivi e delle attività operative         |
+| 11:40 - 12:00 | 20 min | Chiusura con osservazioni e sintesi del meeting, raccolta di feedback       |
+
+Durante il primo **Project Scoping Meeting** i partecipanti hanno comunicato e condiviso la necessità per l'azienda di dover fornire ai propri utenti un sistema software che permetta l'utilizzo di molteplici dispositivi in maniera rapida ed efficace, senza dover pensare troppo ad un interfaccia grafica ad-hoc per dispositivo, in quanto forniscono già quelle applicazioni.
 
 Questo è stato possibile poichè è stata condotta un'analisi dell'attuale utilizzo degli utenti dei propri dispositivi IoT (**AS IS**) (tale analisi è stata possibile grazie alle recensioni lasciate dagli utenti), discutendo quindi di come poter risolvere il problema attraverso un sistema software (**TO BE**), definendone le principali caratteristiche, come il linguaggio a blocchi per gli script, un protocollo comune tra tutti i dispositivi e la gestione dei permessi degli utenti da parte di un admin.
 
@@ -53,10 +65,10 @@ Gli utenti rappresentano il target principale del progetto, e possono essere sud
 
 I primi sono il vero target del progetto, in quanto l'applicativo serve proprio per aiutare nella gestione di tanti dispositivi IoT attraverso l'utilizzo di una singola app.
 
-I secondi, per quanto non siano il target principale, sono comunque considerati per più motivi: 
+I secondi, per quanto non siano il target principale, sono comunque considerati per più motivi:
 - potrebbero decidere di comprare altri dispositivi IoT dall'azienda se ne vedono un particolare guadagno con l'utilizzo dell'applicativo;
 - potrebbero decidere comunque di usare l'applicativo perchè comodo (per esempio potrebbero avere solamente un sensore della luce e una o due lampadine IoT, permettendo di automatizzare accensione/spegnimento delle luci in base alla luce percepita dal sensore);
-- E' importante controllare e far sì che questi utenti non preferiscano il nuovo applicativo al vecchio in tutte le situazioni, perchè questo progetto non si pone l'obbiettivo di togliere le vecchie applicazioni specifiche per dispositivo. 
+- E' importante controllare e far sì che questi utenti non preferiscano il nuovo applicativo al vecchio in tutte le situazioni, perchè questo progetto non si pone l'obbiettivo di togliere le vecchie applicazioni specifiche per dispositivo.
 
 Ovviamente per l'azienda rendere "inutili" i vecchi applicativi vorrebbe dire non doverle più aggiornare e produrre ma piuttosto tenere aggiornato solo quello nuovo, però questa decisione avrebbe bisogno di un appoggio concreto fornito da tanti feedback da parte degli utenti, in modo da capire se il nuovo applicativo è davvero in grado di sostituire tutti i vecchi, per cui si pensa che si possa mettere da parte questa soluzione per il momento.
 

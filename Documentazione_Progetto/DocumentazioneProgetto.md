@@ -128,6 +128,81 @@
 
 ## Requirements Breakdown Structure (RBS)
 
+[Goal](#project-overview-statement-pos) -> **R1: Devices Protocol**
+[Goal](#project-overview-statement-pos) -> **R2: Scripts management subsystem**
+[Goal](#project-overview-statement-pos) -> **R3: Presentation subsystem**
+[Goal](#project-overview-statement-pos) -> **R4: Devices management subsystem**
+[Goal](#project-overview-statement-pos) -> **R5: Devices registration subsystem**
+[Goal](#project-overview-statement-pos) -> **R6: Users management subsystem**
+[Goal](#project-overview-statement-pos) -> **R7: Permissions management subsystem**
+[Goal](#project-overview-statement-pos) -> **R8: Notifications management susbystem**
+
+- **R1**
+  - **R1.F1**: scelta linguaggio del protocollo
+  - **R1.F2**: dichiarazione informazioni base sul dispositivo IoT
+  - **R1.F3**: dichiarazione proprietà del dispositivo IoT
+  - **R1.F4**: dichiarazione azioni del dispositivo IoT
+  - **R1.F5**: dichiarazione eventi del dispositivo IoT
+- **R2**
+  - **R2.F1**: creazione script vuoto con nome
+  - **R2.F2**: aggiunta istruzioni allo script
+  - **R2.F3**: esecuzione script
+    - **_SF1_**: avvio manuale della task
+    - **_SF2_**: avvio automatico della automazione
+  - **R2.F4**: visualizzazione script
+  - **R2.F5**: modifica script già esistente
+  - **R2.F6**: eliminazione script già esistente
+  - **R2.F7**: visualizzazione di tutti gli script
+- **R3**
+  - **R3.F1**: scelta design system
+  - **R3.F2**: creazione template per uniformare le pagine
+  - **R3.F3**: creazione pagine per tutti gli utenti
+    - **_SF1_**: pagina per la gestione dei dispositivi
+    - **_SF2_**: pagina per la gestione delle task
+    - **_SF3_**: pagina per la gestione delle automazioni
+    - **_SF4_**: pagina per la gestione delle notifiche
+  - **R3.F4**: creazione pagine per l'admin
+    - **_SF1_**: pagina per la gestione degli utenti
+    - **_SF2_**: pagina per la registrazione dei dispositivi
+    - **_SF3_**: pagina per la gestione dei gruppi di dispositivi
+    - **_SF4_**: pagina per la gestione dei permessi utente-dispositivo
+    - **_SF5_**: pagina per la gestione dei permessi utente-script
+  - **R3.F5**: collegamento frontend-backend
+- **R4**
+  - **R4.F1**: creazione gruppo di dispositivi
+  - **R4.F2**: aggiunta dispositivo esistente ad un gruppo
+  - **R4.F3**: visualizzazione dispositivi in un gruppo
+  - **R4.F4**: rimozione dispositivo da un gruppo
+  - **R4.F5**: cambio nome gruppo
+  - **R4.F6**: eliminazione gruppo
+  - **R4.F7**: visualizzazione gruppi
+  - **R4.F8**: visualizzazione dispositivi
+  - **R4.F9**: visualizzazione proprietà ed azioni del singolo dispositivo
+  - **R4.F10**: eseguire azioni di un dispositivo
+- **R5**
+  - **R5.F1**: Individuazione dispositivi
+  - **R5.F2**: Invio richiesta di registrazione ad un dispositivo
+  - **R5.F3**: Ricezione della registrazione del dispositivo
+    - **_SF1_**: Dispositivo accettato se conforme al protocollo
+    - **_SF2_**: Dispositivo non accettato altrimenti
+- **R6**
+  - **R6.F1**: Registrazione utente
+    - **_SF1_**: Automaticamente admin se è il primo utente
+    - **_SF2_**: Invio richiesta registrazione all'admin altrimenti
+  - **R6.F2**: Visualizzazione richieste di registrazione
+  - **R6.F3**: Accettazione richiesta di registrazione
+  - **R6.F4**: Rifiuto richiesta di registrazione
+  - **R6.F5**: Eliminazione utente dal server
+  - **R6.F6**: Login utente registrato nel server
+- **R7**
+  - **R7.F1**: Visualizzazione permessi utente-dispositivo
+  - **R7.F2**: Modifica permessi utente-dispositivo
+  - **R7.F3**: Visualizzazione permessi utente-scripts
+  - **R7.F4**: Modifica permessi utente-scripts
+- **R8**
+  - **R8.F1**: Utente sceglie di ricevere notifiche sullo status offline/online di un certo dispositivo
+  - **R8.F2**: Invio notifica ad un utente specifico
+
 ## User Stories
 
 ## Modello PMLC
