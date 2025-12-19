@@ -104,7 +104,7 @@
 | ID   | Rischio                                              | Triangolo dello scope | Impatto | Probabilità | Mitigazione          |
 | ---- | ---------------------------------------------------- | --------------------- | ------- | ----------- | -------------------- |
 | #001 | Basse performance                                    | Qualità               | Alto    | Bassa       | Mitigare             |
-| #002 | Tempo per creare il protocollo troppo lungo          | Tempo                 | Alto    | Media       | Piano di contingenza |
+| #002 | Tempo per creare il protocollo troppo lungo          | Tempo                 | Medio   | Media       | Piano di contingenza |
 | #003 | Difficoltà nell'integrazione dei vari sottosistemi   | Scope                 | Alto    | Bassa       | Mitigare             |
 | #004 | Difficoltà nel creare un linguaggio di script adatto | Scope                 | Alto    | Media       | Piano di contingenza |
 | #005 | Gestione dei permessi utenti complessa               | Scope                 | Basso   | Bassa       | Accettare            |
@@ -125,6 +125,14 @@
 | #010 | Non disponibilità di dispositivi da testare             | Risorse               | Alto    | Bassa       | Evitare     |
 | #011 | Budget non sufficiente                                  | Costo                 | Alto    | Media       | Evitare     |
 | #012 | Errata assegnazione delle priorità ai vari sottosistemi | Risorse               | Alto    | Media       | Evitare     |
+
+#### Piani di contingenza
+
+| ID Rischio | Piano di contingenza                                                                                                                                                                                   |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| #002       | Si può lavorare al protocollo mentre altri lavorano ad altre parti, perciò si può nel caso aumentare il tempo a disposizione per lavorare al protocollo finchè gli altri lavorano al resto del sistema |
+| #004       | Si può discutere del linguaggio insieme ad altri sviluppatori o architetti per cercare di trovare una soluzione, ispirandosi anche ad altri linguaggi a blocchi conosciuti                             |
+| #007       | Utilizzo di prototipi intermedi da far valutare agli utenti in modo da ricevere feedback e tornare sulla giusta strada                                                                                 |
 
 ## Requirements Breakdown Structure (RBS)
 
