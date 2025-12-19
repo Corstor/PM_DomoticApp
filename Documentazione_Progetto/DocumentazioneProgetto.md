@@ -205,4 +205,54 @@
 
 ## User Stories
 
+| Da     | Voglio poter                                                                                                                        | così che                                                                                                                                   |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Utente | Creare una task con istruzioni di tutti i tipi anche se non ho i permessi su certi dispositivi                                      | Qualcuno diverso da me potrà eseguirla oppure darmi i permessi per farlo io stesso                                                         |
+| Utente | Creare un'automazione senza le istruzioni che eseguono le azioni sui dispositivi su cui non ho i permessi                           | Non possa eseguire azioni sui dispositivi che l'admin non vuole farmi usare                                                                |
+| Admin  | Gestire i permessi utente-dispositivo                                                                                               | Gli utenti possano eseguire azioni solamente sui dispositivi che voglio                                                                    |
+| Admin  | Gestire una whitelist ed una blacklist per ogni task                                                                                | A prescindere dai permessi utente-dispositivo un utente possa eseguire o non eseguire la task                                              |
+| Admin  | Gestire una editlist per una task o una automazione                                                                                 | Possa decidere quali utenti possono modificare tale task o automazione (per un'automazione controllo anche chi può attivarla/disattivarla) |
+| Admin  | Eliminare un gruppo di dispositivi senza eliminare i dispositivi dal server                                                         | Possa continuare ad usarli ma senza quel gruppo specifico                                                                                  |
+| Utente | Aggiungere un'istruzione ad uno script che invii una notifica con un messaggio personalizzato a qualcuno nello specifico            | Possa decidere a chi inviare un messaggio personalizzato in modo automatico                                                                |
+| Utente | Aggiungere un'istruzione ad uno script che blocchi lo script per una quantità di tempo specificata                                  | Possa interrompere il flusso di controllo dello script per un tot di tempo                                                                 |
+| Utente | Aggiungere un'istruzione ad uno script che faccia partire un'altra task                                                             | Il mio script attuale si fermi fino alla fine dell'esecuzione della task avviata                                                           |
+| Utente | Aggiungere un'istruzione ad uno script che crea una costante tipizzata con un valore specifico                                      | Possa utilizzare tale valore in seguito dentro lo stesso script                                                                            |
+| Utente | Aggiungere un'istruzione ad uno script che quando eseguito legga il valore di una proprietà specifica di un particolare dispositivo | Tale valore venga messo dentro una costante da utilizzare in seguito dentro lo stesso script                                               |
+| Utente | Aggiungere un'istruzione ad uno script che esegue un'azione su un certo dispositivo                                                 | Possa eseguire azioni in modo pre-programmato e/o automatico                                                                               |
+| Utente | Aggiungere un'istruzione di If che confronta due valori dello stesso tipo tra di loro                                               | Possa eseguire delle istruzioni solo nel caso in cui la condizione torni vero                                                              |
+| Utente | Aggiungere un'istruzione di If-Else che confronta due valori dello stesso tipo tra di loro                                          | Possa eseguire certe istruzioni nel caso in cui la condizione sia vera e altre istruzioni altrimenti                                       |
+| Utente | Decidere se un'automazione parte in base al ricevimento di un evento di un dispositivo o secondo un certo periodo di tempo          | Possa automatizzare l'esecuzione delle automazioni secondo i miei bisogni, possibilmente creando cooperazione tra i dispositivi            |
+| Utente | Cambiare il mio username e la mia password                                                                                          | Possa tener aggiornati i miei dati                                                                                                         |
+
+### Definition of Done
+
+Una user story così come una funzione/sottofunzione della RBS può essere definita completata al 100% quando:
+
+- Tutti gli unit test passano
+- Il codice compila senza errori
+- Il codice è stato revisionato da un altro sviluppatore e tutti i possibili problemi risolti
+- Il nuovo codice non genera conflitti con quello vecchio
+- La documentazione è stata aggiornata
+- La funzionalità implementata è validata
+
+Ovviamente il primo punto non può valere per il presentation subsystem in quanto non è possibile testare l'interfaccia grafica. In questo caso, il punto sarà scambiato con:
+
+- L'interfaccia grafica è stata provata da persone che non ci hanno lavorato ed è stato approvato con successo
+
 ## Modello PMLC
+
+### Users Management Subsystem
+
+### Devices Management Subsystem
+
+### Devices Protocol
+
+### Devices Registration Subsystem
+
+### Scripts Management Subsystem
+
+### Permissions Management Subsystem
+
+### Notifications Management Subsystem
+
+### Presentation Subsystem
