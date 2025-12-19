@@ -243,16 +243,48 @@ Ovviamente il primo punto non può valere per il presentation subsystem in quant
 
 ### Users Management Subsystem
 
+**Metodologia**: Lineare
+
+**Motivazione**: Lo scope è ben definito e non cambierà, la soluzione è chiara ed è possibile usare una COTS per accelerare i lavori.
+
 ### Devices Management Subsystem
+
+**Metodologia**: Incrementale
+
+**Motivazione**: Non si è completamente sicuri di come visualizzare le proprietà ed eseguire le azioni di un dispositivo, per questo bisognerà procedere di volta in volta testando se le funzionalità sviluppate rispettano i requisiti che sono chiari e ben definiti.
 
 ### Devices Protocol
 
+**Metodologia**: Adattivo
+
+**Motivazione**: Il protocollo comune tra i dispositivi dovrà essere creato durante il progetto ed essendo qualcosa di completamente nuovo per l'azienda potrebbe richiedere vari cambi di requisiti e di idee per la soluzione finale.
+
 ### Devices Registration Subsystem
+
+**Metodologia**: Incrementale
+
+**Motivazione**: I requisiti sono chiari e ben definiti, ma ci sono tante soluzioni possibili e bisogna sceglierne una che potrebbe cambiare per vari motivi, come performance o semplicità di utilizzo/messa in pratica.
 
 ### Scripts Management Subsystem
 
+**Metodologia**: Adattivo
+
+**Motivazione**: La gestione degli script è complicata ed è previsto che ci saranno molti cambiamenti anche dei requisiti nel corso del progetto.
+
 ### Permissions Management Subsystem
+
+**Metodologia**: Iterativo
+
+**Motivazione**: La gestione dei permessi è qualcosa di complesso e si ha bisogno del feedback di utenti per poter capire se i requisiti sono corretti e completi.
 
 ### Notifications Management Subsystem
 
+**Metodologia**: Lineare
+
+**Motivazione**: Requisiti ben definiti e soluzione già ben utilizzata in più progetti, non sarà necessario modificare questo sottosistema una volta progettato.
+
 ### Presentation Subsystem
+
+**Metodologia**: Incrementale
+
+**Motivazione**: I requisiti sono piuttosto stabili e ben definiti, ma la soluzione è da perfezionare attraverso dei prototipi intermedi da far provare ad altri sviluppatori ed esperti del settore. Arrivati ad un certo punto di completezza del prototipo possono essere rilasciate versioni beta da far provare direttamente agli utenti e perfezionare l'applicativo attraverso il feedback ricevuto.
