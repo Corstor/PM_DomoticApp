@@ -53,7 +53,9 @@ La **gestione dei permessi** è saltata fuori nel momento in cui un bambino dove
 
 Inoltre la discussione ha fatto luce su certe **Conditions Of Satisfactions (COS)** che guideranno il monitoring del progetto ed un'analisi degli **stakeholder** per comprendere appieno il target del progetto.
 
-Infine, sono stati decisi i prossimi passi, incluso un secondo incontro per la **gestione dei rischi** e un'analisi dettagliata dei **requisiti**. Nonostante inizialmente erano presenti degli sviluppatori un po' scettici riguardo il protocollo comune tra i dispositivi, la comunicazione tra le varie parti e qualche idea abbozzata ha calmato gli spiriti e tutti sperano nella riuscita del progetto.
+Infine, sono stati decisi i prossimi passi, incluso un secondo incontro per la **gestione dei rischi** e un'analisi dettagliata dei **requisiti**.
+
+Nonostante inizialmente erano presenti degli sviluppatori un po' scettici riguardo il protocollo comune tra i dispositivi, la comunicazione tra le varie parti e qualche idea abbozzata ha calmato gli spiriti e tutti sperano nella riuscita del progetto.
 
 ## Stakeholders Analysis
 
@@ -66,6 +68,7 @@ Gli utenti rappresentano il target principale del progetto, e possono essere sud
 I primi sono il vero target del progetto, in quanto l'applicativo serve proprio per aiutare nella gestione di tanti dispositivi IoT attraverso l'utilizzo di una singola app.
 
 I secondi, per quanto non siano il target principale, sono comunque considerati per più motivi:
+
 - potrebbero decidere di comprare altri dispositivi IoT dall'azienda se ne vedono un particolare guadagno con l'utilizzo dell'applicativo;
 - potrebbero decidere comunque di usare l'applicativo perchè comodo (per esempio potrebbero avere solamente un sensore della luce e una o due lampadine IoT, permettendo di automatizzare accensione/spegnimento delle luci in base alla luce percepita dal sensore);
 - E' importante controllare e far sì che questi utenti non preferiscano il nuovo applicativo al vecchio in tutte le situazioni, perchè questo progetto non si pone l'obbiettivo di togliere le vecchie applicazioni specifiche per dispositivo.
@@ -83,3 +86,22 @@ Supporta il progetto per i benefici strategici che ne possono ricavare, come il 
 ### Investitori e finanziatori
 
 Supporta il progetto per i benefici economici che ne possono ricavare, puntando ad un guadagno misurabile ottenuto principalmente dalla maggiore soddisfazione dei clienti.
+
+## Altri Project Scoping Meeting
+
+In seguito al primo Project Scoping Meeting ne sono succeduti altri tre, in cui hanno fatto parte anche altri stakeholder chiave, come gli investitori e, indirettamente, gli utenti (attraverso il loro feedback delle recensioni lasciate sul sito dell'azienda).
+
+### Project Scoping Meeting 2
+
+Nel secondo incontro ci si è concentrati sulla definizione dei requisiti e della analisi degli stakeholder, oltre che alla scelta dei PMLC model, come preannunciato alla fine del primo. Si è redatto una RBS per la maggior parte delle funzionalità, pur incorporandola con delle user stories per poter definire ancor meglio i ruoli degli utenti (user/admin) e certi requisiti complessi che non riuscivano ad essere definiti in modo chiaro e completo attraverso la RBS.
+In seguito alla analisi degli stakeholder, si è deciso di tenere in considerazione anche il feedback degli utenti sia per i requisiti sia per le prossime fasi del progetto, così come l'invito alla partecipazione nei prossimi incontri dei possibili investitori del progetto.
+Infine, per poter sfruttare al meglio il progetto, si è scelti di seguire dei PMLC model differenti per ogni macro-requisito. Infatti in questo modo sarà possibile lavorare, per esempio, seguendo un modello lineare per implementare dei sistemi già noti, mentre altri sviluppatori lavoreranno seguendo un modello incrementale, iterativo o addirittura adattivo per altri sistemi meno noti o meno semplici.
+
+### Project Scoping Meeting 3
+
+Nel terzo incontro, sia in seguito ad ulteriori feedback da parte di utenti che alle richieste degli investitori, si è deciso di aggiornare la RBS e soprattutto certe user stories, in particolar modo la parte riguardante i permessi. Questo incontro infatti ha dato la possibilità di evidenziare quanto sia complesso e pericoloso il mondo dei permessi sui dispositivi IoT per un applicativo che ne controlla vari.
+In tal proposito, si è anche deciso di utilizzare un modello iterativo per il sistema dei permessi piuttosto che uno incrementale, in modo da essere più flessibili sui requisiti se mai dovessero cambiare di nuovo.
+
+### Project Scoping Meeting 4
+
+Nell'ultimo incontro è stato formalizzato il Project Overview Statement (POS), in modo da sintetizzare le informazioni più importanti del progetto. Questo incontro ha permesso quindi di stabilire una solida base per l'avanzamento del progetto nelle prossime fasi.
