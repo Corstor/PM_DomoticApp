@@ -1,3 +1,18 @@
+# Indice
+
+- [Riassunto del problema](#riassunto-del-problema)
+  - [Soluzione proposta](#soluzione-proposta)
+- [Project Scoping Meeting](#project-scoping-meeting)
+- [Stakeholders Analysis](#stakeholders-analysis)
+  - [Utenti](#utenti)
+  - [Sviluppatori](#sviluppatori)
+  - [SDA Corporation](#sda-corporation)
+  - [Investitori e finanziatori](#investitori-e-finanziatori)
+- [Altri Project Scoping Meeting](#altri-project-scoping-meeting)
+  - [Project Scoping Meeting 2](#project-scoping-meeting-2)
+  - [Project Scoping Meeting 3](#project-scoping-meeting-3)
+  - [Project Scoping Meeting 4](#project-scoping-meeting-4)
+
 # Descrizione dell'approccio utilizzato
 
 ## Riassunto del problema
