@@ -234,7 +234,8 @@
 
 ### Definition of Done
 
-Una user story così come una funzione/sottofunzione della RBS può essere definita completata al 100% quando:
+Sarà fondamentale seguire la metodologia del TDD (Test Driven Development) per lo sviluppo software dove possibile.
+Questo permette di definire una user story così come una funzione/sottofunzione della RBS completata al 100% quando:
 
 - Tutti gli unit test passano
 - Il codice compila senza errori
