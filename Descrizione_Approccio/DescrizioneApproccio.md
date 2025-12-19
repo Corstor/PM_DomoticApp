@@ -108,15 +108,20 @@ In seguito al primo Project Scoping Meeting ne sono succeduti altri tre, in cui 
 
 ### Project Scoping Meeting 2
 
-Nel secondo incontro ci si è concentrati sulla definizione dei requisiti e della analisi degli stakeholder, oltre che alla scelta dei PMLC model, come preannunciato alla fine del primo. Si è redatto una RBS per la maggior parte delle funzionalità, pur incorporandola con delle user stories per poter definire ancor meglio i ruoli degli utenti (user/admin) e certi requisiti complessi che non riuscivano ad essere definiti in modo chiaro e completo attraverso la RBS.
-In seguito alla analisi degli stakeholder, si è deciso di tenere in considerazione anche il feedback degli utenti sia per i requisiti sia per le prossime fasi del progetto, così come l'invito alla partecipazione nei prossimi incontri dei possibili investitori del progetto.
-Infine, per poter sfruttare al meglio il progetto, si è scelti di seguire dei PMLC model differenti per ogni macro-requisito. Infatti in questo modo sarà possibile lavorare, per esempio, seguendo un modello lineare per implementare dei sistemi già noti, mentre altri sviluppatori lavoreranno seguendo un modello incrementale, iterativo o addirittura adattivo per altri sistemi meno noti o meno semplici.
+Nel secondo incontro ci si è concentrati sulla definizione dei requisiti e della analisi degli stakeholder, oltre che alla scelta dei PMLC model, come preannunciato alla fine del primo. 
+
+Si è redatto una **Requirements Breakdown Structure** (RBS) per la maggior parte delle funzionalità, pur incorporandola con delle **user stories** per poter definire ancor meglio i ruoli degli utenti (user/admin) e certi requisiti complessi che non riuscivano ad essere definiti in modo chiaro e completo attraverso la RBS.
+
+In seguito alla **analisi degli stakeholder**, si è deciso di tenere in considerazione anche il feedback degli utenti sia per i requisiti sia per le prossime fasi del progetto, così come l'invito alla partecipazione nei prossimi incontri dei possibili investitori del progetto.
+
+Infine, per poter sfruttare al meglio il progetto, si è scelti di seguire dei **PMLC model** differenti per ogni macro-requisito. Infatti in questo modo sarà possibile lavorare, per esempio, seguendo un modello **lineare** per implementare dei sistemi già noti, mentre altri sviluppatori lavoreranno seguendo un modello **incrementale**, **iterativo** o addirittura **adattivo** per altri sistemi meno noti o meno semplici.
 
 ### Project Scoping Meeting 3
 
-Nel terzo incontro, sia in seguito ad ulteriori feedback da parte di utenti che alle richieste degli investitori, si è deciso di aggiornare la RBS e soprattutto certe user stories, in particolar modo la parte riguardante i permessi. Questo incontro infatti ha dato la possibilità di evidenziare quanto sia complesso e pericoloso il mondo dei permessi sui dispositivi IoT per un applicativo che ne controlla vari.
+Nel terzo incontro, sia in seguito ad ulteriori feedback da parte di utenti che alle richieste degli investitori, si è deciso di aggiornare la RBS e soprattutto certe user stories, in particolar modo la parte riguardante i **permessi**. Questo incontro infatti ha dato la possibilità di evidenziare quanto sia complesso e pericoloso il mondo dei permessi sui dispositivi IoT per un applicativo che ne gestisce molti.
+
 In tal proposito, si è anche deciso di utilizzare un modello iterativo per il sistema dei permessi piuttosto che uno incrementale, in modo da essere più flessibili sui requisiti se mai dovessero cambiare di nuovo.
 
 ### Project Scoping Meeting 4
 
-Nell'ultimo incontro è stato formalizzato il Project Overview Statement (POS), in modo da sintetizzare le informazioni più importanti del progetto. Questo incontro ha permesso quindi di stabilire una solida base per l'avanzamento del progetto nelle prossime fasi.
+Nell'ultimo incontro è stato formalizzato il **Project Overview Statement** (POS), in modo da sintetizzare le informazioni più importanti del progetto. Questo incontro ha permesso quindi di stabilire una solida base per l'avanzamento del progetto nelle prossime fasi.
