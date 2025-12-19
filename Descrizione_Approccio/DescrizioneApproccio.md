@@ -8,6 +8,9 @@
   - [Sviluppatori](#sviluppatori)
   - [SDA Corporation](#sda-corporation)
   - [Investitori e finanziatori](#investitori-e-finanziatori)
+- [Desideri e Bisogni](#desideri-e-bisogni)
+  - [Desideri](#desideri)
+  - [Bisogni](#bisogni)
 - [Altri Project Scoping Meeting](#altri-project-scoping-meeting)
   - [Project Scoping Meeting 2](#project-scoping-meeting-2)
   - [Project Scoping Meeting 3](#project-scoping-meeting-3)
@@ -102,13 +105,30 @@ Supporta il progetto per i benefici strategici che ne possono ricavare, come il 
 
 Supporta il progetto per i benefici economici che ne possono ricavare, puntando ad un guadagno misurabile ottenuto principalmente dalla maggiore soddisfazione dei clienti.
 
+## Desideri e Bisogni
+
+Grazie alla stakeholder analysis e all'analisi dello stato attuale e lo stato desiderato, è stato possibile definire quali sono i desideri e i bisogni dell'azienda.
+
+### Desideri
+
+- Fornire delle notifiche agli utenti quando un dispositivo cambia status da online ad offline o viceversa;
+- Fornire delle notifiche agli utenti quando uno script da errore;
+- Non sostituire i vecchi applicativi con quello nuovo, ma evidenziarne l'utilità;
+- Raggruppare i dispositivi in gruppi logici per facilitare l'utilizzo dell'applicativo da parte degli utenti.
+
+### Bisogni
+
+- Applicativo che gestisca molti dispositivi anche eterogenei in modo uniforme;
+- Applicativo che permetta di eseguire automazioni e/o sequenze di azioni pre-programmate su vari dispositivi anche eterogenei;
+- Riduzione dei passaggi ripetitivi da parte degli utenti per aumentarne la soddisfazione;
+
 ## Altri Project Scoping Meeting
 
 In seguito al primo Project Scoping Meeting ne sono succeduti altri tre, in cui hanno fatto parte anche altri stakeholder chiave, come gli investitori e, indirettamente, gli utenti (attraverso il loro feedback delle recensioni lasciate sul sito dell'azienda).
 
 ### Project Scoping Meeting 2
 
-Nel secondo incontro ci si è concentrati sulla definizione dei requisiti e della analisi degli stakeholder, oltre che alla scelta dei PMLC model, come preannunciato alla fine del primo. 
+Nel secondo incontro ci si è concentrati sulla definizione dei requisiti e della analisi degli stakeholder, oltre che alla scelta dei PMLC model, come preannunciato alla fine del primo.
 
 Si è redatto una **Requirements Breakdown Structure** (RBS) per la maggior parte delle funzionalità, pur incorporandola con delle **user stories** per poter definire ancor meglio i ruoli degli utenti (user/admin) e certi requisiti complessi che non riuscivano ad essere definiti in modo chiaro e completo attraverso la RBS.
 

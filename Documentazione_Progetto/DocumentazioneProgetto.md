@@ -51,7 +51,6 @@
 
 - Notifiche quando un dispositivo va offline o online.
 - Notifiche quando uno script da errore.
-- Procedura di installazione di un dispositivo per hostare l'applicativo in locale se richiesto.
 - Fornitura di un server online (cloud) come secondo entry point dell'applicativo, in modo da permettere l'utilizzo del suddetto anche da remoto.
 
 ## Condictions of Satisfaction (COS)
@@ -113,6 +112,7 @@
         </ul>
       </td>
     </tr>
+    <tr>
       <th>Ostacoli</th>
       <td>
         <ul> 
