@@ -69,7 +69,7 @@ Il **linguaggio a blocchi** è stato pensato per poter dare agli utenti la possi
 Il **protocollo** è il pilastro portante del progetto in quanto è necessario per poter gestire molteplici dispositivi eterogenei con la stessa applicazione senza dover fare grafiche diverse per ogni dispositivo.
 La **gestione dei permessi** è saltata fuori nel momento in cui un bambino dovesse creare script "pericolosi" senza il permesso dei genitori, è richiesto dunque una adeguata gestione in tal senso.
 
-Inoltre la discussione ha fatto luce su certe **Conditions Of Satisfactions (COS)** che guideranno il monitoring del progetto ed un'analisi degli **stakeholder** per comprendere appieno il target del progetto.
+Inoltre la discussione ha fatto luce su certe **Conditions Of Satisfactions (COS)** che guideranno la definizione del **POS** e il monitoring del progetto ed un'analisi degli **stakeholder** per comprendere appieno il target del progetto.
 
 Infine, sono stati decisi i prossimi passi, incluso un secondo incontro per la **gestione dei rischi** e un'analisi dettagliata dei **requisiti**.
 

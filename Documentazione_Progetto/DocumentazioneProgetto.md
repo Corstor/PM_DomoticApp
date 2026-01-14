@@ -239,7 +239,7 @@
 
 ## User Stories
 
-| Da     | Voglio poter                                                                                                                        | così che                                                                                                                                   |
+| Da     | Voglio poter                                                                                                                        | Così che                                                                                                                                   |
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | Utente | Creare una task con istruzioni di tutti i tipi anche se non ho i permessi su certi dispositivi                                      | Qualcuno diverso da me potrà eseguirla oppure darmi i permessi per farlo io stesso                                                         |
 | Utente | Creare un'automazione senza le istruzioni che eseguono le azioni sui dispositivi su cui non ho i permessi                           | Non possa eseguire azioni sui dispositivi che l'admin non vuole farmi usare                                                                |
@@ -323,3 +323,5 @@ Ovviamente il primo punto non può valere per il presentation subsystem in quant
 **Metodologia**: Incrementale
 
 **Motivazione**: I requisiti sono piuttosto stabili e ben definiti, ma la soluzione è da perfezionare attraverso dei prototipi intermedi da far provare ad altri sviluppatori ed esperti del settore. Arrivati ad un certo punto di completezza del prototipo possono essere rilasciate versioni beta da far provare direttamente agli utenti e perfezionare l'applicativo attraverso il feedback ricevuto.
+
+## 
