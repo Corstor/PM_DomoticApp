@@ -1,28 +1,44 @@
 # Indice
 
-- [Analisi dello stato](#analisi-dello-stato)
-  - [AS IS](#as-is)
-  - [TO BE](#to-be)
-  - [NICE TO HAVE](#nice-to-have)
-- [Condictions of Satisfaction (COS)](#condictions-of-satisfaction-cos)
-- [Project Overview Statement (POS)](#project-overview-statement-pos)
-  - [Analisi dei Rischi](#analisi-dei-rischi)
-    - [Rischi tecnici](#rischi-tecnici)
-    - [Rischi di gestione progetto](#rischi-di-gestione-progetto)
-    - [Rischi di organizzazione](#rischi-di-organizzazione)
-    - [Piani di contingenza](#piani-di-contingenza)
-- [Requirements Breakdown Structure (RBS)](#requirements-breakdown-structure-rbs)
-- [User Stories](#user-stories)
-  - [Definition of Done](#definition-of-done)
-- [Modello PMLC](#modello-pmlc)
-  - [Users Management Subsystem](#users-management-subsystem)
-  - [Devices Management Subsystem](#devices-management-subsystem)
-  - [Devices Protocol](#devices-protocol)
-  - [Devices Registration Subsystem](#devices-registration-subsystem)
-  - [Scripts Management Subsystem](#scripts-management-subsystem)
-  - [Permissions Management Subsystem](#permissions-management-subsystem)
-  - [Notifications Management Subsystem](#notifications-management-subsystem)
-  - [Presentation Subsystem](#presentation-subsystem)
+- [Indice](#indice)
+- [Documentazione di progetto](#documentazione-di-progetto)
+  - [Analisi dello stato](#analisi-dello-stato)
+    - [AS IS](#as-is)
+    - [TO BE](#to-be)
+    - [NICE TO HAVE](#nice-to-have)
+  - [Condictions of Satisfaction (COS)](#condictions-of-satisfaction-cos)
+  - [Project Overview Statement (POS)](#project-overview-statement-pos)
+    - [Analisi dei Rischi](#analisi-dei-rischi)
+      - [Rischi tecnici](#rischi-tecnici)
+      - [Rischi di gestione progetto](#rischi-di-gestione-progetto)
+      - [Rischi di organizzazione](#rischi-di-organizzazione)
+      - [Piani di contingenza](#piani-di-contingenza)
+  - [Requirements Breakdown Structure (RBS)](#requirements-breakdown-structure-rbs)
+  - [User Stories](#user-stories)
+    - [Definition of Done](#definition-of-done)
+  - [Modello PMLC](#modello-pmlc)
+    - [Users Management Subsystem](#users-management-subsystem)
+    - [Devices Management Subsystem](#devices-management-subsystem)
+    - [Devices Protocol](#devices-protocol)
+    - [Devices Registration Subsystem](#devices-registration-subsystem)
+    - [Scripts Management Subsystem](#scripts-management-subsystem)
+    - [Permissions Management Subsystem](#permissions-management-subsystem)
+    - [Notifications Management Subsystem](#notifications-management-subsystem)
+    - [Presentation Subsystem](#presentation-subsystem)
+  - [Project Definition Statement (PDS)](#project-definition-statement-pds)
+  - [Work Breakdown Structure (WBS)](#work-breakdown-structure-wbs)
+  - [Stime di Effort e Durata](#stime-di-effort-e-durata)
+  - [Assegnamento delle Risorse](#assegnamento-delle-risorse)
+  - [Project Network Diagram](#project-network-diagram)
+  - [Critical Path e Schedule](#critical-path-e-schedule)
+  - [Stime dei Costi](#stime-dei-costi)
+  - [Cash Flow](#cash-flow)
+  - [Project Proposal](#project-proposal)
+    - [Executive Summary](#executive-summary)
+    - [Background](#background)
+    - [Objective](#objective)
+    - [Overview of Approach](#overview-of-approach)
+    - [Time and Cost Summary](#time-and-cost-summary)
 
 # Documentazione di progetto
 
@@ -324,4 +340,483 @@ Ovviamente il primo punto non può valere per il presentation subsystem in quant
 
 **Motivazione**: I requisiti sono piuttosto stabili e ben definiti, ma la soluzione è da perfezionare attraverso dei prototipi intermedi da far provare ad altri sviluppatori ed esperti del settore. Arrivati ad un certo punto di completezza del prototipo possono essere rilasciate versioni beta da far provare direttamente agli utenti e perfezionare l'applicativo attraverso il feedback ricevuto.
 
-## 
+## Project Definition Statement (PDS)
+
+<table>
+  <tbody>
+    <tr>
+      <th>Problema / Opportunità</th>
+      <td> Molteplici applicativi diversi per la gestione di molteplici dispositivi diversi e completa assenza di cooperazione/competizione tra i vari dispositivi. Gli utenti con molti dispositivi IoT devono gestire ciascuno tramite la propria applicazione dedicata, con passaggi ripetitivi e nessuna possibilità di automazione trasversale. </td>
+    </tr>
+    <tr>
+      <th>Goal</th>
+      <td> Creare un applicativo che riesca a gestire l'insieme di dispositivi eterogenei in modo facile ed intuibile, portando anche cooperazione e/o competizione tra di loro, senza sostituire le applicazioni esistenti ma affiancandole come strumento di gestione unificata. </td>
+    </tr>
+    <tr>
+      <th>Obbiettivi</th>
+      <td> 
+        <ul>
+          <li> <b>O1</b>: Creazione di un protocollo formale (Devices Protocol) che permetta la descrizione di dispositivi IoT eterogenei attraverso proprietà, azioni ed eventi, mantenendo tutte le funzionalità originali. Sottosistemi coinvolti: R1 (Devices Protocol), R5 (Devices Registration). </li>
+          <li> <b>O2</b>: Implementazione di un linguaggio di scripting a blocchi per la programmazione di task ed automazioni che permettano la cooperazione e competizione dei dispositivi presenti nel sistema. Sottosistemi coinvolti: R2 (Scripts Management). Dipende da: O1. </li>
+          <li> <b>O3</b>: Implementazione del sistema software di gestione dei dispositivi, comprensivo di gruppi logici e comunicazione con i dispositivi. Sottosistemi coinvolti: R4 (Devices Management), R5 (Devices Registration). Dipende da: O1. </li>
+          <li> <b>O4</b>: Implementazione del sistema di gestione utenti con ruoli (user/admin) e del sistema di gestione dei permessi sugli utenti. Sottosistemi coinvolti: R6 (Users Management), R7 (Permissions Management). </li>
+          <li> <b>O5</b>: Sviluppo di un'interfaccia utente semplice ed intuitiva, uniforme in ogni pagina, permettendo agli utenti di imparare rapidamente. Sottosistemi coinvolti: R3 (Presentation). Dipende da: O1, O2, O3, O4. </li>
+          <li> <b>O6</b>: Fornire la possibilità di essere notificati dello stato online/offline dei dispositivi e degli errori negli script. Sottosistemi coinvolti: R8 (Notifications Management). Dipende da: O2, O3, O4. </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Criteri di successo</th>
+      <td> 
+        <ul> 
+          <li> Tutti i dispositivi aziendali attualmente in produzione devono poter essere utilizzati attraverso l'applicativo e senza perdita di funzionalità. Verificabile al completamento dell'obiettivo O1. </li> 
+          <li> Gli utenti imparano ad utilizzare l'applicativo in circa 3/4 giorni, massimo 7. Verificabile tramite test di usabilità durante la fase di beta testing. </li>
+          <li> Almeno il 70% degli utenti che possiedono 4 o più dispositivi IoT utilizzano l'applicativo insieme ai vecchi applicativi. Verificabile entro 6 mesi dal rilascio. </li>
+          <li> Soddisfazione pari o superiore all'80% nelle recensioni. Verificabile entro 6 mesi dal rilascio. </li>
+          <li> Aumento del guadagno annuale di almeno 15% entro 2 anni dalla fine del progetto. </li>
+          <li> Costo totale del progetto inferiore a €2M (vincolo COS). </li>
+          <li> Durata totale del progetto non superiore a 15 mesi. </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Assunzioni</th>
+      <td>
+        <ul>
+          <li> Gli utenti admin del sistema sono mediamente esperti di tecnologia: sanno usare uno smartphone e navigare su internet. </li>
+          <li> I dispositivi IoT aziendali attualmente in produzione sono disponibili per il testing durante l'intero progetto. </li>
+          <li> Le competenze necessarie per lo sviluppo del protocollo e del linguaggio a blocchi sono presenti nel team o acquisibili tramite formazione. </li>
+          <li> L'infrastruttura tecnologica aziendale (server di sviluppo, ambienti di test) è disponibile e adeguata. </li>
+          <li> Gli utenti finali sono disponibili per sessioni di feedback durante la fase di beta testing. </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Rischi e Ostacoli</th>
+      <td>
+        <ul> 
+          <li> Gli utenti potrebbero volere funzionalità avanzate o specifiche per certi dispositivi che vanno oltre lo scopo del progetto. Piano: comunicazione chiara dello scope tramite le COS. </li>
+          <li> Il protocollo potrebbe non riuscire a coprire tutti i dispositivi esistenti senza perdita di funzionalità (Rischio #002). Piano di contingenza: aumento del tempo a disposizione. </li>
+          <li> Il linguaggio a blocchi potrebbe risultare troppo complesso o limitato per gli utenti (Rischio #004). Piano di contingenza: ispirazione a linguaggi a blocchi esistenti e sessioni di confronto. </li>
+          <li> La UX/UI potrebbe non soddisfare gli utenti (Rischio #007). Piano di contingenza: prototipi intermedi con feedback utenti. </li>
+          <li> Il sistema potrebbe non essere sufficientemente modulare per futuri ampliamenti (Rischio #008). Piano: architettura a microservizi/moduli fin dalla progettazione. </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## Work Breakdown Structure (WBS)
+
+**1. DomoticApp**
+
+- **1.1 Project Management**
+  - 1.1.1 Pianificazione del progetto
+  - 1.1.2 Monitoraggio e controllo (attività continuativa)
+  - 1.1.3 Chiusura del progetto
+- **1.2 Devices Protocol** *(PMLC: Adattivo)*
+  - 1.2.1 Analisi dei dispositivi IoT esistenti
+  - 1.2.2 Progettazione della struttura del protocollo
+  - 1.2.3 Implementazione del parser del protocollo
+  - 1.2.4 Test del protocollo sui dispositivi
+  - 1.2.5 Revisione e raffinamento del protocollo
+- **1.3 Users Management Subsystem** *(PMLC: Lineare)*
+  - 1.3.1 Selezione e configurazione COTS per autenticazione
+  - 1.3.2 Implementazione registrazione e login
+  - 1.3.3 Implementazione gestione ruoli (user/admin)
+  - 1.3.4 Test del sottosistema utenti
+- **1.4 Devices Management Subsystem** *(PMLC: Incrementale)*
+  - 1.4.1 Implementazione CRUD gruppi di dispositivi
+  - 1.4.2 Implementazione visualizzazione dispositivi e proprietà
+  - 1.4.3 Implementazione esecuzione azioni su dispositivi
+  - 1.4.4 Test del sottosistema dispositivi
+- **1.5 Devices Registration Subsystem** *(PMLC: Incrementale)*
+  - 1.5.1 Implementazione individuazione dispositivi nella rete
+  - 1.5.2 Implementazione flusso di registrazione del dispositivo
+  - 1.5.3 Implementazione validazione conformità al protocollo
+  - 1.5.4 Test del sottosistema registrazione
+- **1.6 Scripts Management Subsystem** *(PMLC: Adattivo)*
+  - 1.6.1 Progettazione del linguaggio a blocchi
+  - 1.6.2 Implementazione editor visuale per script
+  - 1.6.3 Implementazione motore di esecuzione script
+  - 1.6.4 Implementazione gestione task e automazioni
+  - 1.6.5 Test del sottosistema script
+- **1.7 Permissions Management Subsystem** *(PMLC: Iterativo)*
+  - 1.7.1 Progettazione del modello dei permessi
+  - 1.7.2 Implementazione permessi utente-dispositivo
+  - 1.7.3 Implementazione permessi utente-script (whitelist/blacklist/editlist)
+  - 1.7.4 Validazione dei permessi con utenti e raffinamento
+- **1.8 Notifications Management Subsystem** *(PMLC: Lineare)*
+  - 1.8.1 Implementazione sistema di notifiche base
+  - 1.8.2 Implementazione notifiche stato dispositivo (online/offline)
+  - 1.8.3 Implementazione notifiche errori script
+  - 1.8.4 Test del sottosistema notifiche
+- **1.9 Presentation Subsystem** *(PMLC: Incrementale)*
+  - 1.9.1 Selezione design system e creazione template base
+  - 1.9.2 Implementazione pagine utente
+  - 1.9.3 Implementazione pagine admin
+  - 1.9.4 Collegamento frontend-backend
+  - 1.9.5 Test UX e prototipi intermedi
+- **1.10 Testing e Integrazione**
+  - 1.10.1 Test di integrazione dei sottosistemi
+  - 1.10.2 Test end-to-end
+  - 1.10.3 Beta testing con utenti
+  - 1.10.4 Correzione bug e ottimizzazione
+
+**Mapping WBS → RBS:**
+
+| WBS | RBS | Copertura |
+|-----|-----|-----------|
+| 1.2 | R1 | R1.F1-R1.F5 (scelta linguaggio, dichiarazione info base, proprietà, azioni, eventi) |
+| 1.3 | R6 | R6.F1-R6.F6 (registrazione, visualizzazione richieste, accettazione/rifiuto, eliminazione, login) |
+| 1.4 | R4 | R4.F1-R4.F10 (CRUD gruppi, visualizzazione dispositivi/gruppi/proprietà, esecuzione azioni) |
+| 1.5 | R5 | R5.F1-R5.F3 (individuazione, invio richiesta, ricezione registrazione) |
+| 1.6 | R2 | R2.F1-R2.F7 (creazione/aggiunta istruzioni/esecuzione/visualizzazione/modifica/eliminazione script) |
+| 1.7 | R7 | R7.F1-R7.F4 (visualizzazione/modifica permessi utente-dispositivo e utente-script) |
+| 1.8 | R8 | R8.F1-R8.F2 (scelta notifiche, invio notifiche) |
+| 1.9 | R3 | R3.F1-R3.F5 (design system, template, pagine utente, pagine admin, collegamento FE-BE) |
+
+## Stime di Effort e Durata
+
+Le stime sono espresse in settimane. La tecnica di stima utilizzata è indicata per ogni task.
+
+| ID | Task | Durata (settimane) | Tecnica di stima |
+|----|------|--------------------|------------------|
+| 1.1.1 | Pianificazione del progetto | 3 | Giudizio di esperti |
+| 1.2.1 | Analisi dei dispositivi IoT esistenti | 3 | Giudizio di esperti |
+| 1.2.2 | Progettazione struttura protocollo | 3 | Three-Point |
+| 1.2.3 | Implementazione parser protocollo | 4 | Three-Point |
+| 1.2.4 | Test protocollo sui dispositivi | 3 | Three-Point |
+| 1.2.5 | Revisione e raffinamento protocollo | 2 | Three-Point |
+| 1.3.1 | Selezione e configurazione COTS | 2 | Dati storici |
+| 1.3.2 | Implementazione registrazione e login | 3 | Dati storici |
+| 1.3.3 | Implementazione gestione ruoli | 2 | Giudizio di esperti |
+| 1.3.4 | Test sottosistema utenti | 2 | Giudizio di esperti |
+| 1.4.1 | Implementazione CRUD gruppi | 3 | Giudizio di esperti |
+| 1.4.2 | Implementazione visualizzazione dispositivi | 3 | Three-Point |
+| 1.4.3 | Implementazione azioni su dispositivi | 3 | Three-Point |
+| 1.4.4 | Test sottosistema dispositivi | 2 | Giudizio di esperti |
+| 1.5.1 | Implementazione individuazione dispositivi | 3 | Three-Point |
+| 1.5.2 | Implementazione flusso di registrazione | 3 | Three-Point |
+| 1.5.3 | Implementazione validazione protocollo | 2 | Giudizio di esperti |
+| 1.5.4 | Test sottosistema registrazione | 2 | Giudizio di esperti |
+| 1.6.1 | Progettazione linguaggio a blocchi | 4 | Three-Point |
+| 1.6.2 | Implementazione editor visuale | 4 | Three-Point |
+| 1.6.3 | Implementazione motore di esecuzione | 4 | Three-Point |
+| 1.6.4 | Implementazione gestione task e automazioni | 3 | Three-Point |
+| 1.6.5 | Test sottosistema script | 3 | Giudizio di esperti |
+| 1.7.1 | Progettazione modello permessi | 3 | Three-Point |
+| 1.7.2 | Implementazione permessi utente-dispositivo | 3 | Three-Point |
+| 1.7.3 | Implementazione permessi utente-script | 3 | Three-Point |
+| 1.7.4 | Validazione permessi con utenti | 3 | Giudizio di esperti |
+| 1.8.1 | Implementazione sistema notifiche base | 2 | Dati storici |
+| 1.8.2 | Implementazione notifiche stato dispositivo | 2 | Giudizio di esperti |
+| 1.8.3 | Implementazione notifiche errori script | 2 | Giudizio di esperti |
+| 1.8.4 | Test sottosistema notifiche | 2 | Giudizio di esperti |
+| 1.9.1 | Selezione design system e template | 2 | Dati storici |
+| 1.9.2 | Implementazione pagine utente | 4 | Three-Point |
+| 1.9.3 | Implementazione pagine admin | 3 | Three-Point |
+| 1.9.4 | Collegamento frontend-backend | 4 | Three-Point |
+| 1.9.5 | Test UX e prototipi intermedi | 3 | Giudizio di esperti |
+| 1.10.1 | Test di integrazione dei sottosistemi | 3 | Giudizio di esperti |
+| 1.10.2 | Test end-to-end | 3 | Giudizio di esperti |
+| 1.10.3 | Beta testing con utenti | 3 | Giudizio di esperti |
+| 1.10.4 | Correzione bug e ottimizzazione | 3 | Three-Point |
+| 1.1.3 | Chiusura del progetto | 2 | Giudizio di esperti |
+
+**Nota**: il task 1.1.2 (Monitoraggio e controllo) è un'attività continuativa del Project Manager per tutta la durata del progetto (~30% del suo tempo) e non è incluso come task discreto nel network diagram.
+
+## Assegnamento delle Risorse
+
+**Composizione del team di progetto:**
+
+| ID | Ruolo | Competenze principali | Costo settimanale (lordo) |
+|----|-------|-----------------------|---------------------------|
+| PM | Project Manager | Gestione progetto, comunicazione, dominio IoT | €1.600 |
+| SD1 | Senior Developer 1 | Backend, IoT, protocolli di comunicazione | €1.400 |
+| SD2 | Senior Developer 2 | Backend, architettura software, linguaggi formali | €1.400 |
+| D1 | Developer 1 | Backend, database, API REST | €1.100 |
+| D2 | Developer 2 | Backend, sicurezza, autenticazione | €1.100 |
+| D3 | Developer 3 | Frontend, linguaggi visuali, UX | €1.100 |
+| D4 | Developer 4 | Full-stack, testing, automazione | €1.100 |
+| UX | UX/UI Designer | Design system, prototipazione, accessibilità | €1.100 |
+| QA | QA Tester | Testing, quality assurance, automazione test | €1.000 |
+| IoT | IoT Specialist | Dispositivi IoT, elettronica, protocolli hardware | €1.200 (part-time) |
+
+**Assegnamento risorse per task:**
+
+| ID | Task | Risorse assegnate | Costo task |
+|----|------|--------------------|------------|
+| 1.1.1 | Pianificazione del progetto | PM, SD1, SD2 | €13.200 |
+| 1.2.1 | Analisi dispositivi IoT esistenti | SD1, IoT | €7.800 |
+| 1.2.2 | Progettazione struttura protocollo | SD1, IoT | €7.800 |
+| 1.2.3 | Implementazione parser protocollo | SD1, D1 | €10.000 |
+| 1.2.4 | Test protocollo sui dispositivi | QA, IoT | €6.600 |
+| 1.2.5 | Revisione e raffinamento protocollo | SD1, IoT | €5.200 |
+| 1.3.1 | Selezione e configurazione COTS | D2 | €2.200 |
+| 1.3.2 | Implementazione registrazione e login | SD2, D2 | €7.500 |
+| 1.3.3 | Implementazione gestione ruoli | D2 | €2.200 |
+| 1.3.4 | Test sottosistema utenti | QA | €2.000 |
+| 1.4.1 | Implementazione CRUD gruppi | D1, D2 | €6.600 |
+| 1.4.2 | Implementazione visualizzazione dispositivi | D1 | €3.300 |
+| 1.4.3 | Implementazione azioni su dispositivi | D1, D2 | €6.600 |
+| 1.4.4 | Test sottosistema dispositivi | QA | €2.000 |
+| 1.5.1 | Implementazione individuazione dispositivi | SD1, IoT | €7.800 |
+| 1.5.2 | Implementazione flusso di registrazione | SD1 | €4.200 |
+| 1.5.3 | Implementazione validazione protocollo | SD1, D1 | €5.000 |
+| 1.5.4 | Test sottosistema registrazione | QA | €2.000 |
+| 1.6.1 | Progettazione linguaggio a blocchi | SD2, D3 | €10.000 |
+| 1.6.2 | Implementazione editor visuale | D3, UX | €8.800 |
+| 1.6.3 | Implementazione motore di esecuzione | SD2, D4 | €10.000 |
+| 1.6.4 | Implementazione gestione task e automazioni | SD2, D3, D4 | €10.800 |
+| 1.6.5 | Test sottosistema script | QA, D4 | €6.300 |
+| 1.7.1 | Progettazione modello permessi | PM | €4.800 |
+| 1.7.2 | Implementazione permessi utente-dispositivo | D2 | €3.300 |
+| 1.7.3 | Implementazione permessi utente-script | D2, D4 | €6.600 |
+| 1.7.4 | Validazione permessi con utenti | QA, PM | €7.800 |
+| 1.8.1 | Implementazione sistema notifiche base | D4 | €2.200 |
+| 1.8.2 | Implementazione notifiche stato dispositivo | D4 | €2.200 |
+| 1.8.3 | Implementazione notifiche errori script | D4 | €2.200 |
+| 1.8.4 | Test sottosistema notifiche | QA | €2.000 |
+| 1.9.1 | Selezione design system e template | UX | €2.200 |
+| 1.9.2 | Implementazione pagine utente | UX, D3 | €8.800 |
+| 1.9.3 | Implementazione pagine admin | UX, D3 | €6.600 |
+| 1.9.4 | Collegamento frontend-backend | D1, D2 | €8.800 |
+| 1.9.5 | Test UX e prototipi intermedi | UX, QA | €6.300 |
+| 1.10.1 | Test di integrazione | QA, SD1, SD2 | €11.400 |
+| 1.10.2 | Test end-to-end | QA, D1 | €6.300 |
+| 1.10.3 | Beta testing con utenti | QA, PM, UX | €11.100 |
+| 1.10.4 | Correzione bug e ottimizzazione | SD1, SD2, D1, D2 | €15.000 |
+| 1.1.2 | Monitoraggio e controllo (continuativo) | PM (~30%) | €25.920 |
+| 1.1.3 | Chiusura del progetto | PM | €3.200 |
+| | | **Totale personale** | **€284.620** |
+
+## Project Network Diagram
+
+**Tabella delle dipendenze** (tutte le dipendenze sono di tipo Finish-to-Start):
+
+| ID | Task | Predecessori | Durata |
+|----|------|-------------|--------|
+| 1.1.1 | Pianificazione del progetto | - | 3 |
+| 1.2.1 | Analisi dispositivi IoT esistenti | 1.1.1 | 3 |
+| 1.2.2 | Progettazione struttura protocollo | 1.2.1 | 3 |
+| 1.2.3 | Implementazione parser protocollo | 1.2.2 | 4 |
+| 1.2.4 | Test protocollo sui dispositivi | 1.2.3 | 3 |
+| 1.2.5 | Revisione e raffinamento protocollo | 1.2.4 | 2 |
+| 1.3.1 | Selezione e configurazione COTS | 1.1.1 | 2 |
+| 1.3.2 | Implementazione registrazione e login | 1.3.1 | 3 |
+| 1.3.3 | Implementazione gestione ruoli | 1.3.2 | 2 |
+| 1.3.4 | Test sottosistema utenti | 1.3.3 | 2 |
+| 1.4.1 | Implementazione CRUD gruppi | 1.2.5, 1.3.4 | 3 |
+| 1.4.2 | Implementazione visualizzazione dispositivi | 1.4.1 | 3 |
+| 1.4.3 | Implementazione azioni su dispositivi | 1.4.2 | 3 |
+| 1.4.4 | Test sottosistema dispositivi | 1.4.3 | 2 |
+| 1.5.1 | Implementazione individuazione dispositivi | 1.2.5 | 3 |
+| 1.5.2 | Implementazione flusso di registrazione | 1.5.1 | 3 |
+| 1.5.3 | Implementazione validazione protocollo | 1.5.2 | 2 |
+| 1.5.4 | Test sottosistema registrazione | 1.5.3 | 2 |
+| 1.6.1 | Progettazione linguaggio a blocchi | 1.1.1 | 4 |
+| 1.6.2 | Implementazione editor visuale | 1.6.1 | 4 |
+| 1.6.3 | Implementazione motore di esecuzione | 1.6.1 | 4 |
+| 1.6.4 | Implementazione gestione task e automazioni | 1.6.2, 1.6.3, 1.2.5 | 3 |
+| 1.6.5 | Test sottosistema script | 1.6.4 | 3 |
+| 1.7.1 | Progettazione modello permessi | 1.1.1 | 3 |
+| 1.7.2 | Implementazione permessi utente-dispositivo | 1.7.1, 1.3.4 | 3 |
+| 1.7.3 | Implementazione permessi utente-script | 1.7.2, 1.6.5 | 3 |
+| 1.7.4 | Validazione permessi con utenti | 1.7.3 | 3 |
+| 1.8.1 | Implementazione sistema notifiche base | 1.3.4 | 2 |
+| 1.8.2 | Implementazione notifiche stato dispositivo | 1.8.1, 1.4.4 | 2 |
+| 1.8.3 | Implementazione notifiche errori script | 1.8.2, 1.6.5 | 2 |
+| 1.8.4 | Test sottosistema notifiche | 1.8.3 | 2 |
+| 1.9.1 | Selezione design system e template | 1.1.1 | 2 |
+| 1.9.2 | Implementazione pagine utente | 1.9.1, 1.4.4 | 4 |
+| 1.9.3 | Implementazione pagine admin | 1.9.2 | 3 |
+| 1.9.4 | Collegamento frontend-backend | 1.9.3, 1.7.4, 1.8.4 | 4 |
+| 1.9.5 | Test UX e prototipi intermedi | 1.9.4 | 3 |
+| 1.10.1 | Test di integrazione | 1.9.4, 1.5.4 | 3 |
+| 1.10.2 | Test end-to-end | 1.10.1 | 3 |
+| 1.10.3 | Beta testing con utenti | 1.10.2, 1.9.5 | 3 |
+| 1.10.4 | Correzione bug e ottimizzazione | 1.10.3 | 3 |
+| 1.1.3 | Chiusura del progetto | 1.10.4 | 2 |
+
+## Critical Path e Schedule
+
+**Forward Pass e Backward Pass:**
+
+La seguente tabella riporta i risultati del forward pass (ES, EF) e del backward pass (LS, LF) per ogni task, con il calcolo della slack time. I task con slack = 0 fanno parte del **critical path** (contrassegnati con \*).
+
+| ID | ES | EF | LS | LF | Slack |
+|----|----|----|----|----|-------|
+| 1.1.1 | 1 | 3 | 1 | 3 | **0\*** |
+| 1.2.1 | 4 | 6 | 4 | 6 | **0\*** |
+| 1.2.2 | 7 | 9 | 7 | 9 | **0\*** |
+| 1.2.3 | 10 | 13 | 10 | 13 | **0\*** |
+| 1.2.4 | 14 | 16 | 14 | 16 | **0\*** |
+| 1.2.5 | 17 | 18 | 17 | 18 | **0\*** |
+| 1.3.1 | 4 | 5 | 10 | 11 | 6 |
+| 1.3.2 | 6 | 8 | 12 | 14 | 6 |
+| 1.3.3 | 9 | 10 | 15 | 16 | 6 |
+| 1.3.4 | 11 | 12 | 17 | 18 | 6 |
+| 1.4.1 | 19 | 21 | 19 | 21 | **0\*** |
+| 1.4.2 | 22 | 24 | 22 | 24 | **0\*** |
+| 1.4.3 | 25 | 27 | 25 | 27 | **0\*** |
+| 1.4.4 | 28 | 29 | 28 | 29 | **0\*** |
+| 1.5.1 | 19 | 21 | 31 | 33 | 12 |
+| 1.5.2 | 22 | 24 | 34 | 36 | 12 |
+| 1.5.3 | 25 | 26 | 37 | 38 | 12 |
+| 1.5.4 | 27 | 28 | 39 | 40 | 12 |
+| 1.6.1 | 4 | 7 | 17 | 20 | 13 |
+| 1.6.2 | 8 | 11 | 21 | 24 | 13 |
+| 1.6.3 | 8 | 11 | 21 | 24 | 13 |
+| 1.6.4 | 19 | 21 | 25 | 27 | 6 |
+| 1.6.5 | 22 | 24 | 28 | 30 | 6 |
+| 1.7.1 | 4 | 6 | 25 | 27 | 21 |
+| 1.7.2 | 13 | 15 | 28 | 30 | 15 |
+| 1.7.3 | 25 | 27 | 31 | 33 | 6 |
+| 1.7.4 | 28 | 30 | 34 | 36 | 6 |
+| 1.8.1 | 13 | 14 | 29 | 30 | 16 |
+| 1.8.2 | 30 | 31 | 31 | 32 | 1 |
+| 1.8.3 | 32 | 33 | 33 | 34 | 1 |
+| 1.8.4 | 34 | 35 | 35 | 36 | 1 |
+| 1.9.1 | 4 | 5 | 28 | 29 | 24 |
+| 1.9.2 | 30 | 33 | 30 | 33 | **0\*** |
+| 1.9.3 | 34 | 36 | 34 | 36 | **0\*** |
+| 1.9.4 | 37 | 40 | 37 | 40 | **0\*** |
+| 1.9.5 | 41 | 43 | 44 | 46 | 3 |
+| 1.10.1 | 41 | 43 | 41 | 43 | **0\*** |
+| 1.10.2 | 44 | 46 | 44 | 46 | **0\*** |
+| 1.10.3 | 47 | 49 | 47 | 49 | **0\*** |
+| 1.10.4 | 50 | 52 | 50 | 52 | **0\*** |
+| 1.1.3 | 53 | 54 | 53 | 54 | **0\*** |
+
+**Critical Path:**
+
+> 1.1.1 → 1.2.1 → 1.2.2 → 1.2.3 → 1.2.4 → 1.2.5 → 1.4.1 → 1.4.2 → 1.4.3 → 1.4.4 → 1.9.2 → 1.9.3 → 1.9.4 → 1.10.1 → 1.10.2 → 1.10.3 → 1.10.4 → 1.1.3
+
+*Pianificazione → Devices Protocol → Devices Management → Presentation → Testing e Integrazione → Chiusura*
+
+**Durata del critical path**: 54 settimane
+
+**Durata totale con management reserve** (3 settimane, ~5,5%): **57 settimane** (~13 mesi)
+
+**Schedule (Gantt sintetico):**
+
+| Fase | Settimane | Periodo indicativo |
+|------|-----------|-------------------|
+| Pianificazione | 1-3 | Mese 1 |
+| Devices Protocol | 4-18 | Mesi 1-4 |
+| Users Management | 4-12 | Mesi 1-3 |
+| Scripts Management | 4-24 | Mesi 1-6 |
+| Permissions Management | 4-30 | Mesi 1-7 |
+| Devices Management | 19-29 | Mesi 5-7 |
+| Devices Registration | 19-28 | Mesi 5-7 |
+| Notifications Management | 13-35 | Mesi 3-8 |
+| Presentation | 4-43 | Mesi 1-10 |
+| Testing e Integrazione | 41-52 | Mesi 10-12 |
+| Management Reserve | 53-55 | Mese 13 |
+| Chiusura | 53-54 (o 56-57 se usata reserve) | Mese 13 |
+
+## Stime dei Costi
+
+**Riepilogo costi per sottosistema:**
+
+| Sottosistema | Costo personale |
+|-------------|-----------------|
+| 1.1 Project Management (pianificazione + monitoring + chiusura) | €42.320 |
+| 1.2 Devices Protocol | €37.400 |
+| 1.3 Users Management | €13.900 |
+| 1.4 Devices Management | €18.500 |
+| 1.5 Devices Registration | €19.000 |
+| 1.6 Scripts Management | €45.900 |
+| 1.7 Permissions Management | €22.500 |
+| 1.8 Notifications Management | €8.600 |
+| 1.9 Presentation | €32.700 |
+| 1.10 Testing e Integrazione | €43.800 |
+| **Totale costi di personale** | **€284.620** |
+
+**Costi aggiuntivi:**
+
+| Voce | Costo |
+|------|-------|
+| Infrastruttura (server di sviluppo, ambienti di test, cloud) | €15.000 |
+| Licenze software (MS Project, IDE, strumenti di testing) | €10.000 |
+| Dispositivi IoT per testing (campioni da reparto elettronica) | €20.000 |
+| Formazione specifica (protocolli IoT, linguaggi a blocchi) | €5.000 |
+| Overhead aziendale (pro-rata: ufficio, utenze, amministrazione) | €80.000 |
+| **Totale costi aggiuntivi** | **€130.000** |
+
+**Management reserve** (~10% del totale): **€41.500**
+
+| | |
+|---|---|
+| **Costo totale stimato del progetto** | **€456.120** |
+| **Costo totale con management reserve** | **~€460.000** |
+| **Budget disponibile (vincolo COS)** | **€2.000.000** |
+
+## Cash Flow
+
+**Piano di incasso (inflow):**
+
+Si è previsto un piano di incasso misto con anticipo, pagamenti a milestone e saldo:
+
+| Evento | Periodo | Importo | % del totale |
+|--------|---------|---------|--------------|
+| Anticipo alla firma del contratto | Settimana 1 | €69.000 | 15% |
+| Milestone 1: Protocol + Users Management completati | ~Settimana 18 | €100.000 | 21,7% |
+| Milestone 2: Primo prototipo funzionante (FE-BE collegato) | ~Settimana 40 | €120.000 | 26,1% |
+| Milestone 3: Beta release | ~Settimana 49 | €100.000 | 21,7% |
+| Saldo: accettazione finale | ~Settimana 57 | €71.000 | 15,5% |
+| **Totale** | | **€460.000** | **100%** |
+
+**Piano di spesa (outflow) e cash flow netto su base trimestrale:**
+
+| Trimestre | Settimane | Outflow (uscite) | Inflow (entrate) | Cash Flow netto | Cash Flow cumulato |
+|-----------|-----------|-------------------|-------------------|-----------------|---------------------|
+| Q1 | 1-13 | €120.000 | €69.000 | -€51.000 | -€51.000 |
+| Q2 | 14-26 | €105.000 | €100.000 | -€5.000 | -€56.000 |
+| Q3 | 27-39 | €92.000 | €0 | -€92.000 | -€148.000 |
+| Q4 | 40-52 | €100.000 | €220.000 | +€120.000 | -€28.000 |
+| Q5 | 53-57 | €43.000 | €71.000 | +€28.000 | €0 |
+| **Totale** | | **€460.000** | **€460.000** | **€0** | |
+
+**Nota**: il cash flow cumulato negativo raggiunge il picco nel Q3 (-€148.000). Questa è la massima esposizione finanziaria del progetto, che l'azienda deve essere in grado di coprire con la propria liquidità.
+
+## Project Proposal
+
+### Executive Summary
+
+La SDA Corporation propone lo sviluppo di **DomoticApp**, una web application per la gestione unificata di dispositivi IoT eterogenei. Il progetto ha una durata stimata di 57 settimane (inclusa management reserve) e un costo stimato di €460.000, ben al di sotto del vincolo di budget di €2M.
+
+### Background
+
+L'azienda produce dispositivi IoT, ciascuno con la propria applicazione dedicata. Gli utenti con molti dispositivi devono utilizzare applicazioni diverse per ciascuno, senza possibilità di automazione o cooperazione tra dispositivi. L'analisi delle recensioni degli utenti ha evidenziato questa problematica come fonte di insoddisfazione.
+
+### Objective
+
+Realizzare un applicativo che permetta la gestione di tutti i dispositivi aziendali da un'unica interfaccia, inclusa la possibilità di creare automazioni trasversali tramite un linguaggio di scripting a blocchi. Il tutto basato su un protocollo comune che renda il sistema espandibile a qualsiasi futuro dispositivo.
+
+### Overview of Approach
+
+Il progetto è suddiviso in 8 sottosistemi, ciascuno gestito con il PMLC model più adatto:
+
+| Sottosistema | PMLC Model | Motivazione sintetica |
+|-------------|------------|----------------------|
+| Devices Protocol | Adattivo | Requisiti incerti, soluzione completamente nuova |
+| Scripts Management | Adattivo | Alta complessità e requisiti soggetti a cambiamenti |
+| Devices Management | Incrementale | Requisiti chiari, soluzione da perfezionare |
+| Devices Registration | Incrementale | Requisiti chiari, più soluzioni tecniche possibili |
+| Presentation | Incrementale | Requisiti stabili, prototipazione iterativa con feedback |
+| Users Management | Lineare | Scope ben definito, COTS disponibili |
+| Notifications Management | Lineare | Requisiti semplici e ben compresi |
+| Permissions Management | Iterativo | Complessità, necessità di feedback utenti |
+
+### Time and Cost Summary
+
+| | |
+|---|---|
+| Durata stimata | 54 settimane (critical path) + 3 settimane (management reserve) = **57 settimane** |
+| Team | 10 persone (9 full-time + 1 part-time) |
+| Costo totale stimato | **~€460.000** (inclusa management reserve) |
+| Budget disponibile | €2.000.000 |
+| Massima esposizione finanziaria | €148.000 (al termine del Q3) |
+| Critical path | Pianificazione → Protocol → Devices Mgmt → Presentation → Testing → Chiusura |
