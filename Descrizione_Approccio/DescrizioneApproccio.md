@@ -28,6 +28,21 @@
     - [Management Reserve](#management-reserve)
     - [Stime dei Costi e Cash Flow](#stime-dei-costi-e-cash-flow)
     - [Project Proposal](#project-proposal)
+  - [Launching Process Group](#launching-process-group)
+    - [Reclutamento e bilanciamento del team](#reclutamento-e-bilanciamento-del-team)
+    - [Kick-Off Meeting](#kick-off-meeting)
+    - [Matrice RASCI](#matrice-rasci)
+    - [Regole operative del team](#regole-operative-del-team)
+      - [Problem Solving](#problem-solving)
+      - [Decision Making](#decision-making)
+      - [Conflict Resolution](#conflict-resolution)
+      - [Consensus Building](#consensus-building)
+      - [Brainstorming](#brainstorming)
+      - [Team Meetings](#team-meetings)
+    - [Gestione dei cambiamenti di scope](#gestione-dei-cambiamenti-di-scope)
+    - [Gestione delle comunicazioni](#gestione-delle-comunicazioni)
+    - [Work Packages](#work-packages)
+    - [Finalizzazione della schedule](#finalizzazione-della-schedule)
 
 # Descrizione dell'approccio utilizzato
 
@@ -257,12 +272,12 @@ Oltre ai sottosistemi derivati dalla RBS, è stato aggiunto un nodo per il **Pro
 
 Le stime di effort e durata sono state effettuate a livello di singolo task della WBS durante la JPPS. Si sono utilizzate diverse **tecniche di stima** in base alla natura del task:
 
-- **Giudizio di esperti**: utilizzato per i task più semplici e ben compresi, dove il team aveva esperienza diretta da progetti precedenti (per esempio, il sottosistema Users Management e Notifications Management)
-- **Tecnica Three-Point**: utilizzata per i task con maggiore incertezza, calcolando la durata attesa come $E = \frac{O + 4M + P}{6}$ dove $O$ è la stima ottimistica, $M$ la più probabile e $P$ la pessimistica. Questa tecnica è stata applicata in particolare per i sottosistemi con PMLC adattivo e iterativo
-- **Analisi di dati storici**: utilizzata dove possibile, confrontando con task simili svolti in progetti passati della SDA Corporation
+- **Giudizio di esperti**: utilizzato per i task più semplici e ben compresi, dove il team aveva esperienza diretta da progetti precedenti (per esempio, il sottosistema Users Management e Notifications Management).
+- **Tecnica Three-Point**: utilizzata per i task con maggiore incertezza, calcolando la durata attesa come E = (O + 4M + P) / 6, dove O è la stima ottimistica, M la più probabile e P la pessimistica. Questa tecnica è stata applicata in particolare per i sottosistemi con PMLC adattivo e iterativo.
+- **Analisi di dati storici**: utilizzata dove possibile, confrontando con task simili svolti in progetti passati della SDA Corporation.
 
 Si è tenuto conto che in media un individuo lavora al **75% di efficienza** a causa di interruzioni non pianificate, meeting e attività amministrative. Pertanto le stime di effort sono state calibrate di conseguenza.
-
+****
 Le stime sono espresse in **settimane** come unità temporale, scelta che risulta adeguata per un progetto di queste dimensioni (circa 12 mesi). Per ogni task si è stimata sia la **durata** (elapsed time, necessaria per la schedulazione) sia l'**effort** (labor, necessario per il calcolo dei costi e l'assegnamento delle risorse), tenendo presente che la relazione tra le due non è lineare.
 
 ### Assegnamento delle Risorse
@@ -354,4 +369,193 @@ Al termine della JPPS, è stata redatta una **Project Proposal** che sintetizza 
 - **Appendici**: analisi dei rischi, diagrammi di rete, tabelle di assegnamento risorse
 
 La proposta è stata **approvata** dal senior management dopo una presentazione e una breve sessione di Q&A, con la raccomandazione di monitorare con particolare attenzione i sottosistemi con PMLC adattivo (Devices Protocol e Scripts Management) e di utilizzare la management reserve con parsimonia.
+
+## Launching Process Group
+
+Il **Launching Process Group** rappresenta il passaggio dalla pianificazione all'esecuzione vera e propria del progetto. In questa fase si sono affrontate tutte le attività necessarie per mettere il team nella condizione di lavorare efficacemente: dal completamento del reclutamento, al kick-off meeting, alla definizione delle regole operative, fino alla predisposizione dei processi di gestione dei cambiamenti di scope, delle comunicazioni e dei work packages.
+
+Essendo il progetto nato **internamente** alla SDA Corporation su iniziativa del CEO per rispondere ai feedback degli utenti, non esiste un committente esterno in senso tradizionale. Il ruolo che in un progetto commissionato sarebbe svolto dal cliente è qui ricoperto dal **CEO** stesso, che agisce come **sponsor interno** del progetto: è lui ad aver promosso l'iniziativa, a validare le decisioni di scope e ad approvare i deliverable alle milestone. Gli **investitori** rappresentano invece la parte finanziaria esterna.
+
+### Reclutamento e bilanciamento del team
+
+Il **core team** (PM, SD1, SD2) era già stato selezionato prima della fase di Planning e aveva partecipato alla JPPS. Per la fase di Launching si è completato il reclutamento del **developer team** (D1, D2, D3, D4), del **designer UX** e dello **specialista QA**, oltre alla formalizzazione del contratto part-time con lo **specialista IoT** come risorsa esterna (contracted team).
+
+Per il bilanciamento del team si è fatto riferimento alla classificazione dei **learning styles di David Kolb**, cercando di avere una rappresentanza equilibrata dei quattro stili:
+
+- **Assimilating**: QA e SD2, con la loro capacità di analisi strutturata e modellazione dei problemi
+- **Diverging**: UX e lo specialista IoT, per la loro propensione a vedere alternative e prospettive non convenzionali
+- **Accommodating**: D1, D2, D3 e D4, orientati all'azione e alla realizzazione concreta dei task
+- **Converging**: SD1 e PM, capaci di individuare la soluzione migliore tra le alternative e guidare le scelte tecniche
+
+Questo bilanciamento si è rivelato particolarmente utile per i sottosistemi con PMLC **adattivo** (Devices Protocol e Scripts Management), dove la capacità di esplorare alternative (Diverging) e convergere verso soluzioni concrete (Converging) è fondamentale nel ciclo iterativo.
+
+### Kick-Off Meeting
+
+Il **Project Kick-Off Meeting** è stato organizzato come evento formale per annunciare al team completo e agli stakeholder che il progetto è stato approvato e sta entrando nella fase esecutiva.
+
+**Agenda del kick-off meeting:**
+
+| Orario | Durata | Argomento |
+|--------|--------|-----------|
+| 09:00 - 09:15 | 15 min | Introduzione e presentazione dello sponsor al team |
+| 09:15 - 09:30 | 15 min | Presentazione degli aspetti rilevanti del progetto (sponsor) |
+| 09:30 - 09:50 | 20 min | Presentazione del progetto e delle aspettative aziendali (CEO) |
+| 09:50 - 10:20 | 30 min | Presentazione del progetto e del piano (Project Manager) |
+| 10:20 - 10:40 | 20 min | Presentazione dei membri del team e dei ruoli assegnati |
+| 10:40 - 10:50 | 10 min | Pausa |
+| 10:50 - 11:20 | 30 min | Revisione del PDS con il team completo |
+| 11:20 - 12:00 | 40 min | Definizione delle regole operative del team |
+| 12:00 - 12:30 | 30 min | Integrazione nella schedule delle disponibilità dei membri |
+| 12:30 - 13:00 | 30 min | Identificazione e assegnazione dei work packages iniziali |
+
+Durante il meeting, il PM ha presentato il **PDS** all'intero team, dando a tutti la possibilità di approfondire e porre domande. Il PDS è servito come **punto di riferimento condiviso** per chiarire scope, obiettivi, vincoli e rischi del progetto, ed è stato particolarmente utile per i nuovi membri del developer team che non avevano partecipato alla JPPS.
+
+### Matrice RASCI
+
+Per l'assegnazione delle responsabilità si è adottata una **matrice RASCI** (Responsible, Accountable, Support, Consulted, Informed), che definisce chiaramente per ogni macro-attività della WBS chi ne è **responsabile**, chi ne **approva** il risultato, chi **supporta**, chi viene **consultato** e chi deve essere **informato**.
+
+La scelta della matrice RASCI rispetto a una più semplice RACI è motivata dalla presenza di sottosistemi con PMLC differenti: nei sottosistemi adattivi, il ruolo di **Support** è particolarmente rilevante perché le risorse devono essere flessibili e pronte a intervenire su task che emergono durante le iterazioni. Per i sottosistemi lineari, la matrice risulta più statica e definita fin dall'inizio.
+
+Il **PM** risulta **Accountable** per tutte le macro-attività, garantendo controllo e coerenza complessiva. I Senior Developer sono tipicamente **Consulted** anche sui sottosistemi di cui non sono direttamente responsabili, per assicurare coerenza architetturale.
+
+### Regole operative del team
+
+Durante il kick-off meeting sono state concordate le **regole operative** che il team seguirà durante l'esecuzione del progetto. Ogni aspetto è stato discusso e formalizzato per evitare ambiguità e garantire un processo decisionale efficiente.
+
+#### Problem Solving
+
+Per la risoluzione dei problemi si è adottato il modello dei **cinque passi di Daniel Couger**:
+
+1. Definire il problema e identificarne il "proprietario" (owner)
+2. Raccogliere i dati rilevanti e analizzare le cause
+3. Generare delle idee (tramite brainstorming o analisi individuale)
+4. Valutare e assegnare una priorità alle idee
+5. Sviluppare un piano d'azione
+
+Se la soluzione non si rivela soddisfacente, il processo viene ripetuto. Questa struttura è stata scelta perché fornisce un **framework chiaro e ripetibile**, adatto sia ai sottosistemi lineari (dove i problemi tendono ad essere più tecnici e circoscritti) sia a quelli adattivi (dove i problemi possono riguardare la definizione stessa della soluzione).
+
+#### Decision Making
+
+Per il decision making si è scelto un approccio **misto** in base al contesto:
+
+- **Directive**: il PM prende le decisioni in autonomia per questioni di gestione progetto (scheduling, allocazione risorse, gestione della riserva) e per decisioni urgenti che non possono attendere una consultazione
+- **Participative/Collaborative**: utilizzato durante le sessioni di planning delle iterazioni per i sottosistemi adattivi (Devices Protocol e Scripts Management), dove è fondamentale il contributo di tutti per convergere verso la soluzione migliore
+- **Consultative**: utilizzato per le decisioni architetturali significative, dove il PM o il Senior Developer responsabile decidono dopo aver raccolto input dal team
+
+Nella scelta degli stili si è fatto riferimento alle **sei fasi del processo decisionale di Wysocki**, che collegano ciascuna fase a uno stile di apprendimento di Kolb: dalla definizione della situazione (Assimilator), alla generazione di alternative (Diverger), alla valutazione e scelta (Converger), alla pianificazione dell'azione (Converger), alla valutazione del processo (Accommodator), fino alla valutazione dei risultati (Assimilator). Questo collegamento ha aiutato a capire quali membri del team coinvolgere in quale fase del processo decisionale.
+
+#### Conflict Resolution
+
+Per la gestione dei conflitti si è fatto riferimento al modello di **Thomas-Kilmann**, che identifica cinque approcci in base al grado di assertività e cooperatività. Il team ha concordato di privilegiare l'approccio **Collaborating** (integrativo) come prima scelta, cercando soluzioni win-win. In caso di disaccordo persistente su scelte tecniche, si ricorre al **Compromising** per trovare soluzioni accettabili per entrambe le parti. L'approccio **Competing** è riservato al PM solo per situazioni critiche dove è necessaria una decisione rapida per non bloccare il progetto.
+
+Si è anche concordato che l'approccio **Avoiding** non è accettabile: i conflitti vanno affrontati tempestivamente per evitare che si accumulino e compromettano la collaborazione.
+
+#### Consensus Building
+
+Il team ha adottato la regola secondo cui il **consenso** è la modalità preferita per le decisioni importanti, ma con la consapevolezza — come avverte Wysocki — che un consenso che soddisfa ugualmente tutte le parti potrebbe non essere sempre la decisione migliore. Pertanto, quando il consenso non viene raggiunto in tempi ragionevoli, si passa all'approccio **consultativo** e il PM o il Senior Developer di riferimento prendono la decisione finale informata dal confronto avvenuto.
+
+#### Brainstorming
+
+Le sessioni di **brainstorming** sono state previste come strumento regolare, in particolare durante:
+
+- Le sessioni di sprint planning per i sottosistemi adattivi
+- La fase di generazione idee nel processo di problem solving
+- Le situazioni in cui è necessario esplorare alternative architetturali o di design
+
+Le regole concordate per il brainstorming prevedono: riunire chi ha conoscenza dell'ambito, raccogliere tutte le idee senza giudizio iniziale, continuare fino ad esaurimento idee, discutere tutte le idee con estrema apertura mentale, e solo infine convergere verso la soluzione.
+
+#### Team Meetings
+
+Per le riunioni di progetto sono state definite **tre tipologie** con regole precise:
+
+**Daily Status Meeting** (15 minuti, in piedi):
+- Si discutono solo i task aperti e non ancora completati
+- Ogni responsabile riporta lo stato di avanzamento con una delle quattro formulazioni standard: "In schedule", "In ritardo di X, ma rientrerò entro Y", "In ritardo, ho bisogno di aiuto", "In anticipo, posso aiutare"
+- I problemi non vengono risolti durante il daily ma vengono segnalati per essere affrontati in una riunione dedicata
+
+**Problem Resolution Meeting** (durata variabile, su richiesta):
+- Partecipa solo chi è coinvolto nel problema specifico
+- Si identifica l'owner del problema, si definisce la soluzione e si stabiliscono i criteri per verificare che il problema sia effettivamente risolto
+- Segue il modello dei cinque passi di Couger
+
+**Project Review Meeting** (evento formale, a ogni milestone):
+- Partecipano PM, senior management, committente, sponsor e stakeholder
+- Si presenta lo stato del progetto alla milestone raggiunta con una revisione critica
+- Si propongono eventuali azioni correttive
+
+Per la gestione delle riunioni si è concordato di seguire le **linee guida before/during/after**: preparare sempre un'agenda e distribuirla in anticipo, rispettare rigorosamente i tempi, assegnare azioni specifiche con responsabili, e redigere un verbale con le decisioni prese e i punti ancora aperti.
+
+### Gestione dei cambiamenti di scope
+
+La gestione dei cambiamenti di scope è un aspetto critico considerando che il progetto include sottosistemi con PMLC **adattivo e iterativo**, dove i cambiamenti di scope sono attesi e fanno parte del processo.
+
+**Processo adottato:**
+
+Si è formalizzato un processo a 6 step:
+
+1. **Sottomissione** della richiesta di cambiamento tramite un **Scope Change Request Form** (compilato dal richiedente)
+2. **Revisione** iniziale della richiesta da parte del PM (accettata per valutazione, rigettata o rinviata al richiedente per rielaborazione)
+3. **Studio di impatto** (Project Impact Statement) a cura del PM e del team, che analizza l'impatto su costi, schedule, qualità, risorse e rischio
+4. **Revisione** dello studio di impatto con il CEO e il senior management
+5. **Decisione** (approvazione, rinvio o rigetto)
+6. **Ristrutturazione** del piano di progetto in caso di approvazione
+
+**Differenziazione per PMLC model:**
+
+Per i sottosistemi con PMLC **lineare** (Users Management, Notifications Management), i cambiamenti di scope sono gestiti con maggior rigore: ogni richiesta segue l'intero processo formale e i cambiamenti vengono approvati solo se assolutamente necessari.
+
+Per i sottosistemi con PMLC **adattivo** (Devices Protocol, Scripts Management), i cambiamenti di scope sono parte integrante del ciclo: al termine di ogni iterazione si rivaluta lo scope alla luce di quanto appreso, e i cambiamenti vengono processati come parte naturale del ciclo plan-do-check. Per questi sottosistemi si è predisposta una **Scope Bank**, un registro dove "depositare" i requisiti non ancora integrati nella soluzione, con una priorità assegnata, da cui pescare nelle iterazioni successive.
+
+**Management reserve per i cambiamenti di scope:**
+
+Come già definito nel planning, le 3 settimane di management reserve (circa il 5.5% della durata del critical path) sono disponibili anche per assorbire l'impatto dei cambiamenti di scope approvati. La gestione della riserva è centralizzata nel PM.
+
+### Gestione delle comunicazioni
+
+La gestione delle comunicazioni è stata pianificata definendo **timing**, **contenuti** e **canali** per ogni tipo di comunicazione di progetto.
+
+**Canali scelti:**
+
+- **Comunicazioni one-to-one (two-way)**: riunioni in presenza e videochiamate per discussioni tecniche complesse, revisioni di design e risoluzione di problemi
+- **Comunicazioni elettroniche (two-way)**: piattaforma di messaggistica aziendale per le comunicazioni rapide e quotidiane, repository Git con code review per le comunicazioni relative al codice, tool di project management per l'aggiornamento dello stato dei task
+- **Comunicazioni scritte (one-way)**: report di avanzamento settimanali per gli stakeholder, email formali per le comunicazioni con il senior management e con gli investitori, documentazione tecnica su wiki condivisa
+
+**Interfacce di comunicazione:**
+
+Il PM è il **nodo centrale** delle comunicazioni, interfacciandosi con: il CEO (per le decisioni di scope e le approvazioni), gli investitori (per gli aspetti economici e le milestone), il senior management (per i report di stato), i team manager/Senior Developer (per il coordinamento tecnico), e i singoli membri del team (per il supporto operativo).
+
+Per i sottosistemi adattivi, il CEO (o un suo delegato del reparto IT) partecipa attivamente alle **review di iterazione**, fornendo feedback diretto che alimenta la pianificazione dell'iterazione successiva. Per i sottosistemi lineari, la comunicazione con il CEO avviene principalmente alle milestone pianificate.
+
+### Work Packages
+
+I **work packages** sono stati scritti per fornire una descrizione dettagliata di come i task verranno completati, aumentando il controllo sul progetto e il rispetto della schedule.
+
+**Criteri di selezione:**
+
+I work packages sono stati redatti prioritariamente per:
+
+- I task sul **critical path** (Devices Protocol, Devices Management, Presentation), dove un ritardo impatta direttamente sulla data di fine progetto
+- I task ad **alto rischio** (in particolare quelli relativi ai sottosistemi adattivi)
+- I task che richiedono risorse **scarse** (lo specialista IoT part-time)
+- I task con **elevata varianza** nella stima della durata
+- I task che consentono il raggiungimento di una **milestone** contrattuale
+- I task che **condividono risorse** e dove il coordinamento è critico
+
+Per ogni work package è stato compilato un **Work Package Assignment Sheet** (che assegna il responsabile e le risorse) e un **Work Package Description Form** (che descrive le attività, i deliverable attesi, i criteri di accettazione e le dipendenze).
+
+### Finalizzazione della schedule
+
+La schedule definita durante il planning è stata **integrata con le disponibilità effettive** dei membri del team. In particolare:
+
+- Lo **specialista IoT** ha comunicato la sua disponibilità part-time (3 giorni/settimana), che era già stata considerata nelle stime
+- Due developer (D3 e D4) hanno comunicato alcune settimane di indisponibilità per impegni su altri progetti, richiedendo un **ribilanciamento** di alcuni task non critici sfruttando gli slack disponibili
+
+Per le risorse in **over-allocation** si è intervenuti con le seguenti strategie, in ordine di preferenza:
+
+1. **Utilizzo degli slack**: spostare i task non critici all'interno del loro margine di float
+2. **Decomposizione ulteriore dei task**: suddividere task grandi in parti più piccole assegnabili a risorse diverse
+3. **Sostituzione di risorse**: assegnare risorse alternative con competenze comparabili
+4. **Allungamento della durata**: estendere la durata di un task riducendo l'impegno settimanale della risorsa (senza modificare l'effort totale)
+
+Non è stato necessario ricorrere allo straordinario né far slittare la data di fine progetto, grazie agli ampi margini di slack presenti nei percorsi non critici della schedule.
 
