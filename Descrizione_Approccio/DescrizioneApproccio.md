@@ -43,6 +43,13 @@
     - [Gestione delle comunicazioni](#gestione-delle-comunicazioni)
     - [Work Packages](#work-packages)
     - [Finalizzazione della schedule](#finalizzazione-della-schedule)
+  - [Monitoring e Controlling Process Group](#monitoring-e-controlling-process-group)
+    - [Sistema di reporting](#sistema-di-reporting)
+    - [Strumenti di reporting visuale](#strumenti-di-reporting-visuale)
+    - [Gestione della Scope Bank](#gestione-della-scope-bank)
+    - [Issues Log](#issues-log)
+    - [Project Status Meetings](#project-status-meetings)
+    - [Acquisizione dell'approvazione a chiudere](#acquisizione-dellapprovazione-a-chiudere)
 
 # Descrizione dell'approccio utilizzato
 
@@ -194,18 +201,18 @@ La fase di planning è iniziata con una **Joint Project Planning Session (JPPS)*
 
 La sessione è stata articolata in una giornata intera, organizzata come segue:
 
-| Orario        | Durata  | Argomento                                                                                       |
-| ------------- | ------- | ----------------------------------------------------------------------------------------------- |
-| 09:00 - 09:30 | 30 min  | Kick-off: riepilogo POS, presentazione team, introduzione alla pianificazione                   |
-| 09:30 - 11:00 | 90 min  | Elaborazione PDS e validazione/prioritizzazione requisiti (MoSCoW)                              |
-| 11:00 - 11:15 | 15 min  | Pausa                                                                                           |
-| 11:15 - 13:00 | 105 min | Generazione della WBS a partire dalla RBS                                                       |
-| 13:00 - 14:00 | 60 min  | Pausa pranzo                                                                                    |
-| 14:00 - 15:30 | 90 min  | Stime di effort, durata e risorse per ogni task della WBS                                       |
-| 15:30 - 15:45 | 15 min  | Pausa                                                                                           |
+| Orario        | Durata  | Argomento                                                                                          |
+| ------------- | ------- | -------------------------------------------------------------------------------------------------- |
+| 09:00 - 09:30 | 30 min  | Kick-off: riepilogo POS, presentazione team, introduzione alla pianificazione                      |
+| 09:30 - 11:00 | 90 min  | Elaborazione PDS e validazione/prioritizzazione requisiti (MoSCoW)                                 |
+| 11:00 - 11:15 | 15 min  | Pausa                                                                                              |
+| 11:15 - 13:00 | 105 min | Generazione della WBS a partire dalla RBS                                                          |
+| 13:00 - 14:00 | 60 min  | Pausa pranzo                                                                                       |
+| 14:00 - 15:30 | 90 min  | Stime di effort, durata e risorse per ogni task della WBS                                          |
+| 15:30 - 15:45 | 15 min  | Pausa                                                                                              |
 | 15:45 - 17:00 | 75 min  | Costruzione del Project Network Diagram, identificazione del critical path e compressione schedule |
-| 17:00 - 17:30 | 30 min  | Stima dei costi, cash flow e management reserve                                                 |
-| 17:30 - 18:00 | 30 min  | Sintesi, consenso dei partecipanti e prossimi passi                                             |
+| 17:00 - 17:30 | 30 min  | Stima dei costi, cash flow e management reserve                                                    |
+| 17:30 - 18:00 | 30 min  | Sintesi, consenso dei partecipanti e prossimi passi                                                |
 
 **Facility e attrezzature:**
 
@@ -395,18 +402,18 @@ Il **Project Kick-Off Meeting** è stato organizzato come evento formale per ann
 
 **Agenda del kick-off meeting:**
 
-| Orario | Durata | Argomento |
-|--------|--------|-----------|
-| 09:00 - 09:15 | 15 min | Introduzione e presentazione dello sponsor al team |
-| 09:15 - 09:30 | 15 min | Presentazione degli aspetti rilevanti del progetto (sponsor) |
+| Orario        | Durata | Argomento                                                      |
+| ------------- | ------ | -------------------------------------------------------------- |
+| 09:00 - 09:15 | 15 min | Introduzione e presentazione dello sponsor al team             |
+| 09:15 - 09:30 | 15 min | Presentazione degli aspetti rilevanti del progetto (sponsor)   |
 | 09:30 - 09:50 | 20 min | Presentazione del progetto e delle aspettative aziendali (CEO) |
-| 09:50 - 10:20 | 30 min | Presentazione del progetto e del piano (Project Manager) |
-| 10:20 - 10:40 | 20 min | Presentazione dei membri del team e dei ruoli assegnati |
-| 10:40 - 10:50 | 10 min | Pausa |
-| 10:50 - 11:20 | 30 min | Revisione del PDS con il team completo |
-| 11:20 - 12:00 | 40 min | Definizione delle regole operative del team |
-| 12:00 - 12:30 | 30 min | Integrazione nella schedule delle disponibilità dei membri |
-| 12:30 - 13:00 | 30 min | Identificazione e assegnazione dei work packages iniziali |
+| 09:50 - 10:20 | 30 min | Presentazione del progetto e del piano (Project Manager)       |
+| 10:20 - 10:40 | 20 min | Presentazione dei membri del team e dei ruoli assegnati        |
+| 10:40 - 10:50 | 10 min | Pausa                                                          |
+| 10:50 - 11:20 | 30 min | Revisione del PDS con il team completo                         |
+| 11:20 - 12:00 | 40 min | Definizione delle regole operative del team                    |
+| 12:00 - 12:30 | 30 min | Integrazione nella schedule delle disponibilità dei membri     |
+| 12:30 - 13:00 | 30 min | Identificazione e assegnazione dei work packages iniziali      |
 
 Durante il meeting, il PM ha presentato il **PDS** all'intero team, dando a tutti la possibilità di approfondire e porre domande. Il PDS è servito come **punto di riferimento condiviso** per chiarire scope, obiettivi, vincoli e rischi del progetto, ed è stato particolarmente utile per i nuovi membri del developer team che non avevano partecipato alla JPPS.
 
@@ -558,4 +565,83 @@ Per le risorse in **over-allocation** si è intervenuti con le seguenti strategi
 4. **Allungamento della durata**: estendere la durata di un task riducendo l'impegno settimanale della risorsa (senza modificare l'effort totale)
 
 Non è stato necessario ricorrere allo straordinario né far slittare la data di fine progetto, grazie agli ampi margini di slack presenti nei percorsi non critici della schedule.
+
+## Monitoring e Controlling Process Group
+
+Il **Monitoring e Controlling Process Group** ha lo scopo di mantenere il progetto allineato al piano approvato, raccogliendo informazioni sullo stato di avanzamento, intercettando tempestivamente gli scostamenti e attivando le azioni correttive necessarie.
+
+### Sistema di reporting
+
+Per effettuare in modo efficiente il reporting sull'avanzamento del progetto ci si è dotati di un **Progress Reporting System** con le seguenti caratteristiche (come indicato da Wysocki):
+
+- Fornisce informazioni sullo stato di avanzamento **tempestive, complete e accurate**
+- Non richiede un overhead eccessivo per il suo utilizzo, così da non essere controproducente
+- Il reporting è **intuitivo e facilmente accettabile** da parte del team e del senior management
+- Il sistema è un efficace strumento di **early warning** per intercettare tempestivamente eventuali problemi
+
+Si sono adottati quattro tipi di report: **Current Period Reports**, **Cumulative Reports**, **Exception Reports** e **Variance Reports**.
+
+La scelta di questi quattro tipi nasce dalla necessità di rivolgersi a **destinatari diversi**: il team necessita di report operativi e dettagliati (Current Period, Variance), mentre il CEO e gli investitori necessitano di report sintetici e ad alto livello (Exception). I Cumulative Reports servono ad entrambi per comprendere il trend complessivo del progetto.
+
+**Aggiornamento delle informazioni:**
+
+Si è stabilito di aggiornare le informazioni con **cadenza settimanale**, in un giorno e orario fissi. Per ogni periodo vengono riportati: il lavoro effettivamente svolto, i dati storici sull'eseguito, le stime aggiornate sulle attività rimanenti, le date di inizio e fine di ciascuna attività iniziata o terminata, i giorni già impegnati e quelli previsti per il completamento, le risorse consumate e quelle rimanenti, e la **percentuale di completamento** di ogni task attivo.
+
+### Strumenti di reporting visuale
+
+**Gantt Chart Project Status Report:**
+
+Il Gantt chart aggiornato con lo stato di avanzamento è il principale strumento visuale per confrontare il pianificato con l'eseguito. Mostra per ogni task la barra pianificata e il progresso effettivo, rendendo immediatamente visibili i task in ritardo o in anticipo.
+
+**Milestone Trend Charts:**
+
+I **Milestone Trend Chart** (cumulative report) sono stati scelti per tracciare l'andamento delle milestone nel tempo. Ad ogni periodo di reporting si riporta la data prevista per ciascuna milestone: se la curva tende verso l'alto, la milestone sta slittando; se è stabile o tende verso il basso, il progetto è sotto controllo. Questo strumento è particolarmente utile per le comunicazioni con il CEO e gli investitori poiché offre una visione sintetica e immediata della salute del progetto.
+
+**Earned Value Analysis (EVA):**
+
+L'Earned Value Analysis è stata applicata per misurare le performance del progetto in termini economici. Si basa su tre grandezze fondamentali:
+
+- **PV** (Planned Value): il valore del lavoro pianificato alla data di rilevazione
+- **EV** (Earned Value): il valore del lavoro effettivamente completato
+- **AC** (Actual Cost): il costo effettivamente sostenuto
+
+Da queste si derivano due indici fondamentali:
+
+- **SPI** (Schedule Performance Index) = EV / PV — fornisce una misura di come il progetto sta performando rispetto a quanto pianificato. Un valore < 1 indica ritardo, > 1 indica anticipo
+- **CPI** (Cost Performance Index) = EV / AC — fornisce una misura di come i costi del lavoro svolto evolvono rispetto ai costi stimati. Un valore < 1 indica superamento del budget, > 1 indica risparmio
+
+### Gestione della Scope Bank
+
+La **Scope Bank**, già predisposta durante il Launching, viene gestita attivamente durante il monitoring e funziona come un vero e proprio "deposito" di tempo:
+
+- Il tempo necessario per processare e integrare una richiesta di modifica dello scope è **attinto dalla Scope Bank**
+- Per aggiungere tempo alla Scope Bank è necessario **rimuovere delle funzionalità/feature** e depositare il tempo che sarebbe stato richiesto per il loro sviluppo
+- Se si **risparmia del tempo** nell'esecuzione di qualche attività, lo si può aggiungere alla Scope Bank
+- Il CEO (nel ruolo di sponsor interno) **ridefinisce continuamente le priorità** del contenuto della Scope Bank
+
+Questo meccanismo è coerente con i sottosistemi adattivi (Devices Protocol e Scripts Management), dove lo scope viene rivalutato ad ogni iterazione e la Scope Bank funge da contenitore dei requisiti non ancora integrati, prioritizzati dallo sponsor.
+
+### Issues Log
+
+L'**Issues Log** è un documento dinamico che contiene tutti i problemi emersi durante il progetto, in particolare quelli non ancora risolti. La sua risoluzione è fondamentale per la continuazione e il successo del progetto.
+
+Per ogni issue vengono registrate le seguenti informazioni: **ID Number**, **data di apertura**, descrizione del **problema**, descrizione dell'**impatto** sul progetto se non viene risolto, **proprietario** del problema (problem owner), **azione da intraprendere**, **stato** e **esito**. L'Issues Log è anche una preziosa fonte di **dati storici** per progetti futuri.
+
+L'Issues Log viene aggiornato durante i **daily status meeting** e nei **Problem Management Meeting**, garantendo che nessun problema venga dimenticato o trascurato.
+
+### Project Status Meetings
+
+Per il monitoraggio si sono utilizzati due tipi di meeting, già definiti nel Launching:
+
+**15-Minute Daily Status Meeting:**
+
+Partecipa l'intero team (o solo i task manager responsabili dei task in lavorazione). Sono riunioni **in piedi** e un facilitatore guida la discussione. Per ciascun task attivo viene riportato sinteticamente lo stato: "in schedula", "in anticipo rispetto alla schedula" (specificando di quanto), oppure "in ritardo rispetto alla schedula" (specificando di quanto e se c'è bisogno di aiuto). Al termine si aggiornano la **Scope Bank** e l'**Issues Log**.
+
+**Problem Management Meeting:**
+
+Partecipano solo i **membri del team coinvolti** nel problema. Si concorda la definizione del problema, si identifica il **proprietario**, si effettua un **brainstorming** per la soluzione, si assegna una priorità alle soluzioni individuate, e si aggiorna l'Issues Log. Se necessario, si pianifica un meeting successivo.
+
+### Acquisizione dell'approvazione a chiudere
+
+Quando tutti i **criteri di accettazione** previsti per la soluzione sono stati soddisfatti, il PM acquisisce l'approvazione formale dal CEO per chiudere il progetto e passare alla **fase di chiusura** (Closing Process Group).
 

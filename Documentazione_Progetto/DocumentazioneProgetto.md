@@ -59,6 +59,11 @@
     - [Work Package: Implementazione visualizzazione dispositivi (1.4.2)](#work-package-implementazione-visualizzazione-dispositivi-142)
     - [Work Package: Collegamento frontend-backend (1.9.4)](#work-package-collegamento-frontend-backend-194)
     - [Work Package: Test di integrazione (1.10.1)](#work-package-test-di-integrazione-1101)
+  - [Monitoring e Controlling](#monitoring-e-controlling)
+    - [Tipi di report](#tipi-di-report)
+    - [Earned Value Analysis](#earned-value-analysis)
+    - [Scope Bank](#scope-bank-1)
+    - [Issues Log](#issues-log)
 
 # Documentazione di progetto
 
@@ -1144,3 +1149,43 @@ I work packages sono stati redatti prioritariamente per i task sul critical path
 | **Criteri di accettazione** | Tutti i flussi principali (registrazione dispositivo → visualizzazione → azione → notifica) funzionano end-to-end. Zero bug bloccanti.                                              |
 | **Rischi**                  | Bug di integrazione non previsti tra sottosistemi sviluppati indipendentemente                                                                                                      |
 | **Note**                    | Task sul critical path. SD1 e SD2 supportano QA per la risoluzione rapida dei bug di integrazione.                                                                                  |
+
+## Monitoring e Controlling
+
+### Tipi di report
+
+| Tipo di report            | Destinatari            | Contenuto                                                                    | Frequenza    |
+| ------------------------- | ---------------------- | ---------------------------------------------------------------------------- | ------------ |
+| **Current Period Report** | Team, PM               | Attività completate, variazioni rispetto al piano, cause e misure correttive | Settimanale  |
+| **Cumulative Report**     | PM, senior management  | Trend completo del progetto, evoluzione scostamenti nel tempo                | A milestone  |
+| **Exception Report**      | Senior management, CEO | Solo scostamenti rispetto al piano, cause e misure correttive (sintetico)    | Su necessità |
+| **Variance Report**       | PM, team               | Confronto pianificato vs. effettivo per ogni attività e periodo              | Settimanale  |
+
+### Earned Value Analysis
+
+| Grandezza                            | Formula            | Descrizione                                 |
+| ------------------------------------ | ------------------ | ------------------------------------------- |
+| **PV** (Planned Value)               | Da baseline        | Valore del lavoro pianificato alla data     |
+| **EV** (Earned Value)                | Da % completamento | Valore del lavoro effettivamente completato |
+| **AC** (Actual Cost)                 | Consuntivo         | Costo effettivamente sostenuto              |
+| **SPI** (Schedule Performance Index) | EV / PV            | < 1: in ritardo; > 1: in anticipo           |
+| **CPI** (Cost Performance Index)     | EV / AC            | < 1: oltre il budget; > 1: sotto il budget  |
+
+**Tabella di tracking EVA (da compilare settimanalmente):**
+
+| Settimana                             | PV (€) | EV (€) | AC (€) | SPI | CPI | Note |
+| ------------------------------------- | ------ | ------ | ------ | --- | --- | ---- |
+| *(da compilare durante l'esecuzione)* |        |        |        |     |     |      |
+
+### Scope Bank
+
+| Data                                  | Operazione          | Descrizione                                 | Tempo depositato | Tempo prelevato | Saldo | Autorizzato da |
+| ------------------------------------- | ------------------- | ------------------------------------------- | ---------------- | --------------- | ----- | -------------- |
+| Inizio progetto                       | Deposito iniziale   | Riserva iniziale (~5-10% tempo complessivo) |                  |                 |       | PM             |
+| *(da compilare durante l'esecuzione)* | Deposito / Prelievo |                                             |                  |                 |       | CEO / PM       |
+
+### Issues Log
+
+| ID                                    | Data | Descrizione problema | Impatto se non risolto | Problem owner | Azione da intraprendere | Stato                  | Esito |
+| ------------------------------------- | ---- | -------------------- | ---------------------- | ------------- | ----------------------- | ---------------------- | ----- |
+| *(da compilare durante l'esecuzione)* |      |                      |                        |               |                         | Aperto/In corso/Chiuso |       |
