@@ -64,6 +64,9 @@
     - [Earned Value Analysis](#earned-value-analysis)
     - [Scope Bank](#scope-bank-1)
     - [Issues Log](#issues-log)
+  - [Closing Process Group](#closing-process-group)
+    - [Procedura di accettazione](#procedura-di-accettazione)
+    - [Audit post-implementazione](#audit-post-implementazione)
 
 # Documentazione di progetto
 
@@ -1189,3 +1192,36 @@ I work packages sono stati redatti prioritariamente per i task sul critical path
 | ID                                    | Data | Descrizione problema | Impatto se non risolto | Problem owner | Azione da intraprendere | Stato                  | Esito |
 | ------------------------------------- | ---- | -------------------- | ---------------------- | ------------- | ----------------------- | ---------------------- | ----- |
 | *(da compilare durante l'esecuzione)* |      |                      |                        |               |                         | Aperto/In corso/Chiuso |       |
+
+## Closing Process Group
+
+### Procedura di accettazione
+
+I criteri di accettazione sono stati definiti con il CEO durante la fase di planning tramite le **Conditions of Satisfaction (COS)**. In fase di esecuzione il team si è accertato che i deliverable prodotti soddisfacessero tali criteri. Il collaudo finale ha certificato il rispetto dei criteri stabiliti.
+
+| Criterio di accettazione                   | Esito collaudo          | Note                                                                                                                                                                     |
+| ------------------------------------------ | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Protocollo univoco per tutti i dispositivi | *concluso con successo* |                                                                                                                                                                          |
+| Restare nel budget (€2M)                   | *concluso con successo* |                                                                                                                                                                          |
+| Feedback positivi dagli utenti             | *concluso con successo* | Il feedback si riferisce agli utenti che hanno provato la versione di beta. Ci sono stati feedback negativi ma sono stati usati come criteri per migliorare il software. |
+| UX e UI semplice ed intuitiva              | *concluso con successo* | Valutato grazie al feedback degli utenti                                                                                                                                 |
+| Modularità del sistema                     | *concluso con successo* |                                                                                                                                                                          |
+| Vecchi applicativi non scompaiono          | *concluso con successo* | Valutato grazie al feedback degli utenti e l'utilizzo della **Parallel Approach**                                                                                        |
+| Alte performance (< 100 ms)                | *concluso con successo* | Valutato grazie al feedback degli utenti e una serie di test condotti su più dispositivi aziendali                                                                       |
+| Comunicazione di guasti                    | *concluso con successo* |                                                                                                                                                                          |
+| Aggiornamento applicativo autonomo         | *concluso con successo* |                                                                                                                                                                          |
+| Gestione dei permessi efficace             | *concluso con successo* | Valutato grazie al feedback degli utenti                                                                                                                                 |
+
+### Audit post-implementazione
+
+| Domanda                                                                | Risposta         |
+| ---------------------------------------------------------------------- | ---------------- |
+| Gli obiettivi del progetto sono stati raggiunti?                       | *(da compilare)* |
+| Il deliverable fa quello che aveva previsto il team?                   | *(da compilare)* |
+| Il deliverable fa quello che si aspettava il CEO?                      | *(da compilare)* |
+| Il progetto è stato completato rispettando tempo, budget e specifiche? | *(da compilare)* |
+| Il CEO è soddisfatto del risultato del progetto?                       | *(da compilare)* |
+| Il business value previsto si è concretizzato?                         | *(da compilare)* |
+| I criteri di successo sono stati rispettati?                           | *(da compilare)* |
+| Che lezione è stata imparata sulla metodologia di gestione scelta?     | *(da compilare)* |
+| Come ha seguito la metodologia il team?                                | *(da compilare)* |
