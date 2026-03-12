@@ -50,6 +50,11 @@
     - [Issues Log](#issues-log)
     - [Project Status Meetings](#project-status-meetings)
     - [Acquisizione dell'approvazione a chiudere](#acquisizione-dellapprovazione-a-chiudere)
+  - [Closing Process Group](#closing-process-group)
+    - [Procedura di accettazione](#procedura-di-accettazione)
+    - [Strategia di installazione](#strategia-di-installazione)
+    - [Final Project Report](#final-project-report)
+    - [Celebrazione della fine del progetto](#celebrazione-della-fine-del-progetto)
 
 # Descrizione dell'approccio utilizzato
 
@@ -645,3 +650,30 @@ Partecipano solo i **membri del team coinvolti** nel problema. Si concorda la de
 
 Quando tutti i **criteri di accettazione** previsti per la soluzione sono stati soddisfatti, il PM acquisisce l'approvazione formale dal CEO per chiudere il progetto e passare alla **fase di chiusura** (Closing Process Group).
 
+## Closing Process Group
+
+### Procedura di accettazione
+
+Una procedura di accettazione ben definita e chiara è necessaria per evitare fraintendimenti e scoprire eventuali problemi alla chiusura del progetto. I **criteri di accettazione** sono stati definiti con la collaborazione del CEO durante la fase di planning, sotto forma di **Conditions of Satisfaction (COS)**. Durante l'esecuzione il team si è accertato che i deliverable prodotti potessero soddisfare tali criteri, e un **collaudo** finale ha certificato il rispetto dei criteri stabiliti. Se i deliverable soddisfano i criteri di accettazione, non dovrebbe accadere che il CEO non sia contento del risultato.
+
+### Strategia di installazione
+
+Per il "go live" è stato scelto il **Parallel Approach**: il nuovo applicativo viene installato mentre le vecchie applicazioni specifiche per dispositivo restano operative, permettendo una **transizione graduale** e sicura per gli utenti.
+
+### Final Project Report
+
+Il progetto DomoticApp è nato con l'obiettivo di fornire agli utenti di SDA Corporation un'unica piattaforma per la gestione unificata di dispositivi IoT eterogenei, attraverso lo sviluppo di una web app intuitiva, modulare e ad alte prestazioni. Il percorso si è articolato in più fasi — scoping, planning, launching, executing, monitoring e closing — ciascuna con obiettivi specifici, milestone di verifica e momenti di confronto costante con il CEO e gli investitori.
+
+Durante lo sviluppo, le criticità principali — come la definizione del protocollo comune tra dispositivi eterogenei e la creazione del linguaggio a blocchi per gli script — sono state affrontate e risolte mediante azioni mirate e tracciate all'interno degli Issues Log. La Scope Bank si è rivelata uno strumento efficace per negoziare modifiche di scope senza compromettere la schedule complessiva.
+
+Tra i principali risultati raggiunti: il rispetto dei tempi di consegna previsti per le 54 settimane operative, un tempo di risposta dell'applicativo in linea con il requisito (< 100 ms su dispositivo aziendale), e un buon livello di soddisfazione da parte degli utenti e degli sviluppatori. Gli indicatori dell'Earned Value Analysis (SPI e CPI), monitorati attraverso i report settimanali e i meeting giornalieri, hanno evidenziato un controllo efficace dei costi e della schedule, con scostamenti minimi e correttivi tempestivi.
+
+Il progetto ha consentito di testare l'efficacia di strumenti avanzati di gestione come i report di tipo Exception e un approccio strutturato alla gestione dei cambiamenti di scope. La strategia di rilascio in modalità Parallel Approach ha permesso una transizione graduale dai vecchi applicativi specifici per dispositivo al nuovo sistema unificato, riducendo al minimo i rischi operativi e rispettando il requisito di non sostituire le applicazioni esistenti.
+
+L'adozione di un approccio **multi-PMLC** — con modelli lineari, incrementali, iterativi e adattivi differenziati per ciascuno degli 8 sottosistemi — si è rivelata determinante. La combinazione di una pianificazione iniziale strutturata (per i sottosistemi a scope ben definito come Users Management e Notifications) con una gestione flessibile e iterativa (per sottosistemi più incerti come Devices Protocol e Scripts Management) ha consentito di mantenere il controllo su tempi e risorse, favorendo al contempo la capacità di adattamento. In particolare, i cicli di feedback con gli utenti per il Permissions Management (modello iterativo) e i prototipi intermedi per il Presentation Subsystem (modello incrementale) hanno agevolato l'emersione di esigenze non previste, migliorando l'allineamento con le aspettative degli utenti finali e rafforzando l'engagement sia del team che degli stakeholder.
+
+Nel complesso, il progetto è stato portato a termine con successo, raggiungendo gli obiettivi iniziali definiti nel POS e nelle COS, restando all'interno del budget di €2M e creando le condizioni per future estensioni della soluzione — come il supporto cloud per l'accesso remoto, inizialmente classificato come "Could have" nella prioritizzazione MoSCoW.
+
+### Celebrazione della fine del progetto
+
+Al completamento del progetto il team celebra la fine del lavoro, riconoscendo i contributi di tutti i membri. Questo momento è importante per il morale del team e per chiudere formalmente il progetto.
