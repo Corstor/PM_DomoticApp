@@ -196,7 +196,7 @@ La fase di planning è iniziata con una **Joint Project Planning Session (JPPS)*
 
 - **Facilitator**: responsabile di moderare la sessione e mantenere il focus sugli obiettivi
 - **Project Manager**: responsabile della conduzione e del successo del progetto
-- **Technographer**: responsabile della registrazione digitale delle decisioni tramite software di PM (MS Project)
+- **Technographer**: responsabile della registrazione digitale delle decisioni tramite software di PM ()
 - **Core project team**: composto da 2 Senior Developer, 4 Developer, 1 UX/UI Designer e 1 QA Tester
 - **IoT Specialist**: esperto del reparto elettronica, con conoscenza approfondita dei dispositivi aziendali
 - **Rappresentante del committente (CEO)**: per validare i requisiti e le decisioni di pianificazione
@@ -225,7 +225,7 @@ La sessione si è svolta in una sala conferenze ampia e lontana da interruzioni,
 
 - Lavagna bianca per la costruzione della WBS tramite sticky notes
 - Proiettore per la visualizzazione dei documenti in tempo reale
-- Software di project management (MS Project) utilizzato dal Technographer per la registrazione
+- Software di project management () utilizzato dal Technographer per la registrazione
 - Pennarelli colorati per evidenziare le relazioni di dipendenza e il critical path sulla lavagna
 
 **Prioritizzazione MoSCoW:**
@@ -289,7 +289,7 @@ Le stime di effort e durata sono state effettuate a livello di singolo task dell
 - **Analisi di dati storici**: utilizzata dove possibile, confrontando con task simili svolti in progetti passati della SDA Corporation.
 
 Si è tenuto conto che in media un individuo lavora al **75% di efficienza** a causa di interruzioni non pianificate, meeting e attività amministrative. Pertanto le stime di effort sono state calibrate di conseguenza.
-****
+
 Le stime sono espresse in **settimane** come unità temporale, scelta che risulta adeguata per un progetto di queste dimensioni (circa 12 mesi). Per ogni task si è stimata sia la **durata** (elapsed time, necessaria per la schedulazione) sia l'**effort** (labor, necessario per il calcolo dei costi e l'assegnamento delle risorse), tenendo presente che la relazione tra le due non è lineare.
 
 ### Assegnamento delle Risorse
@@ -298,7 +298,7 @@ L'assegnamento delle risorse è stato effettuato utilizzando una **matrice compe
 
 Si è scelto un team di 10 persone, di cui 9 a tempo pieno e 1 part-time (IoT Specialist dal reparto elettronica). Il team è stato organizzato secondo una **struttura a matrice**, in cui le risorse sono condivise tra i vari sottosistemi in base alle necessità, mantenendo il Project Manager come punto di riferimento centrale.
 
-Dopo l'assegnamento iniziale si è proceduto al **resource leveling** per risolvere eventuali conflitti di allocazione, utilizzando MS Project. In alcuni casi è stato accettato un leggero allungamento di task non critici (con slack positivo) per evitare il sovraccarico di risorse.
+Dopo l'assegnamento iniziale si è proceduto al **resource leveling** per risolvere eventuali conflitti di allocazione. In alcuni casi è stato accettato un leggero allungamento di task non critici (con slack positivo) per evitare il sovraccarico di risorse.
 
 ### Project Network Diagram e Critical Path
 
