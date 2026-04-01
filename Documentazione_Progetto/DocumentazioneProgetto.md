@@ -1168,7 +1168,7 @@ I work packages sono stati redatti prioritariamente per i task sul critical path
 
 | Grandezza                            | Formula            | Descrizione                                 |
 | ------------------------------------ | ------------------ | ------------------------------------------- |
-| **PV** (Planned Value)               | Da baseline        | Valore del lavoro pianificato alla data     |
+| **PV** (Planned Value)               | Da baseline        | Valore del lavoro pianificato alla data di rilevazione     |
 | **EV** (Earned Value)                | Da % completamento | Valore del lavoro effettivamente completato |
 | **AC** (Actual Cost)                 | Consuntivo         | Costo effettivamente sostenuto              |
 | **SPI** (Schedule Performance Index) | EV / PV            | < 1: in ritardo; > 1: in anticipo           |
